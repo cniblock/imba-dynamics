@@ -102,49 +102,51 @@ body {
 /* Technologies Section */
 .tech-section {
   background-color: #ffffff;
-  padding: 60px 0;
+  padding: 60px 15px;
   color: #001a33;
 }
 
-.tech-section h2 {
-  color: #001a33;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.tech-section p {
-  color: #666666;
-  font-size: 1.2rem;
-  margin-bottom: 40px;
+/* Scrolling Icons Container */
+.scrolling-tech-icons-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 /* Scrolling Icons */
 .scrolling-tech-icons {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden; /* Hide overflow to create a scrolling effect */
-  white-space: nowrap;
+  width: calc(200% + 40px);
+  animation: scrollIcons 30s linear infinite;
 }
 
 .icon-wrapper {
-  display: inline-block;
-  animation: scrollIcons 15s linear infinite; /* Scroll effect */
+  display: flex;
 }
 
-/* Individual tech icon container */
+@keyframes scrollIcons {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Icon Styles */
 .tech-icon {
   display: inline-block;
   margin: 0 20px;
-  text-align: center; /* Center the text under each icon */
+  text-align: center;
 }
 
 .tech-icon img {
+  width: 80px;
+  height: 80px;
   margin-bottom: 10px;
   transition: transform 0.3s ease-in-out;
 }
 
-/* Span for icon text */
 .tech-icon span {
   display: block;
   font-size: 16px;
@@ -152,19 +154,56 @@ body {
   margin-top: 5px;
 }
 
-/* Hover effect for icons */
 .tech-icon img:hover {
-  transform: scale(1.2); /* Slightly enlarge icon on hover */
+  transform: scale(1.2);
 }
 
-/* Animation for scrolling */
-@keyframes scrollIcons {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+/* Icon Styles */
+.tech-icon {
+  display: inline-block;
+  margin: 0 20px; /* Adjust margin as needed */
+  text-align: center;
+}
+
+.tech-icon img {
+  width: 80px; /* Adjust icon size as needed */
+  height: 80px; /* Adjust icon size as needed */
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tech-icon span {
+  display: block;
+  font-size: 16px;
+  color: #001a33;
+  margin-top: 5px;
+}
+
+.tech-icon img:hover {
+  transform: scale(1.2);
+}
+
+/* The rest of your CSS remains the same */
+.tech-icon {
+  display: inline-block;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.tech-icon img {
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tech-icon span {
+  display: block;
+  font-size: 16px;
+  color: #001a33;
+  margin-top: 5px;
+}
+
+.tech-icon img:hover {
+  transform: scale(1.2); /* Slightly enlarge icon on hover */
 }
 
 /* Specific CSS for the About section image */
