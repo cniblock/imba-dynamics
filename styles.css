@@ -44,35 +44,50 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
 }
 
-.navbar {
-  background-color: #001a33;
-}
-
-.navbar-brand {
-  font-size: 1.8rem !important;
-  text-shadow: 4px 4px 6px rgb(22, 72, 141);
-  letter-spacing: 4px;
-  font-weight: 600;
-}
-
-.nav-link,
-.navbar-brand {
-  color: #ffffff;
-}
-
-.nav-link.active {
+/* Navigation Links Animation */
+.navbar .nav-link-animated {
   color: #ffffff !important;
-  font-size: 1.1rem;
-  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease;
 }
 
-.nav-link:hover,
+.navbar .nav-link-animated::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #ffc107;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s ease;
+}
+
+.navbar .nav-link-animated:hover {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+.navbar .nav-link-animated:hover::after {
+  width: 100%;
+}
+
+/* Active Navigation Link Styles */
+.navbar .nav-link-animated.active {
+  color: #ffffff !important; /* White text color */
+  font-size: 1.1rem; /* Slightly larger font size */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow around the text */
+}
+
+.navbar .nav-link-animated.active::after {
+  width: 100%; /* Underline spans full width */
+  background-color: #ffc107; /* Accent color for underline */
+}
+
+/* Optional: Keep hover effect for navbar-brand */
 .navbar-brand:hover {
   color: #cccccc;
-}
-
-.nav-item .disabled {
-  color: #777777;
 }
 
 .header-section {
@@ -448,6 +463,12 @@ body {
   padding-top: 40px;
   padding-bottom: 20px;
   font-family: "Roboto", sans-serif;
+  width: 100%;
+}
+
+.footer .container {
+  max-width: 100%;
+  padding: 0;
 }
 
 .footer h5 {
