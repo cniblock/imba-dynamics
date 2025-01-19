@@ -2,6 +2,24 @@ body {
   background-color: #001f3f;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1 0 auto;
+  width: 100%;
+  position: relative;
+}
+
+.tech-content {
+  padding: 2rem 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .header-section {
@@ -51,22 +69,23 @@ body {
   position: relative;
   display: inline-block;
   transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
 }
 
 .navbar .nav-link-animated::after {
   content: "";
   position: absolute;
-  width: 0%;
+  width: 0;
   height: 2px;
   background-color: #ffc107;
   left: 0;
-  bottom: -5px;
+  bottom: 0;
   transition: width 0.3s ease;
 }
 
 .navbar .nav-link-animated:hover {
   color: #ffffff !important;
-  text-decoration: underline;
 }
 
 .navbar .nav-link-animated:hover::after {
@@ -75,14 +94,13 @@ body {
 
 /* Active Navigation Link Styles */
 .navbar .nav-link-animated.active {
-  color: #ffffff !important; /* White text color */
-  font-size: 1.1rem; /* Slightly larger font size */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow around the text */
+  color: #ffffff !important;
+  font-weight: 500;
 }
 
 .navbar .nav-link-animated.active::after {
-  width: 100%; /* Underline spans full width */
-  background-color: #ffc107; /* Accent color for underline */
+  width: 100%;
+  background-color: #ffc107;
 }
 
 /* Optional: Keep hover effect for navbar-brand */
@@ -297,6 +315,7 @@ body {
   perspective: 1000px;
   margin: 20px;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .flip-card-inner {
@@ -372,12 +391,39 @@ body {
 }
 
 /* Modal Styling */
+.modals-section {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 1050;
+}
+
+.modal {
+  pointer-events: all;
+}
+
+.modal-backdrop {
+  z-index: 1040;
+}
+
+.modal-dialog {
+  z-index: 1050;
+  pointer-events: all;
+}
+
 .modal-content {
   background-color: #001f3f;
   color: white;
   border-radius: 10px;
   border: none;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+  margin: 1.75rem auto;
+  position: relative;
+  width: auto;
+  pointer-events: all;
 }
 
 .modal-header {
@@ -456,19 +502,33 @@ body {
 }
 
 /* Footer */
-
 .footer {
+  flex-shrink: 0;
   background-color: #001a33;
   color: #ffffff;
   padding-top: 40px;
   padding-bottom: 20px;
   font-family: "Roboto", sans-serif;
   width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
 }
 
-.footer .container {
-  max-width: 100%;
-  padding: 0;
+.footer > .container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 30px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.footer .row {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer h5 {
@@ -548,4 +608,13 @@ body {
 
 .footer-link:hover::after {
   width: 100%;
+}
+
+/* Container for flip cards */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
 }

@@ -36,14 +36,14 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a
-                class="nav-link nav-link-animated" href="index.html"
-                >Home</a
-              >
+              <a class="nav-link nav-link-animated" href="index.html">Home</a>
             </li>
             <!-- Active Link for the Current Page -->
             <li class="nav-item">
-              <a class="nav-link nav-link-animated active" aria-current="page" href="tech.html"
+              <a
+                class="nav-link nav-link-animated active"
+                aria-current="page"
+                href="tech.html"
                 >Technologies</a
               >
             </li>
@@ -62,1356 +62,1885 @@
       </div>
     </nav>
 
-    <!-- Header Section -->
-    <section id="tech-header" class="header-section">
-      <div class="container-fluid p-0 position-relative">
-        <img
-          src="AI Header/3a.png"
-          class="img-fluid d-block"
-          alt="Tech header image"
-        />
-        <div class="overlay-text">
-          <h1>Technologies we embrace</h1>
+    <!-- Main Content Wrapper -->
+    <div class="main-content">
+      <!-- Header Section -->
+      <section id="tech-header" class="header-section">
+        <div class="container-fluid p-0 position-relative">
+          <img
+            src="AI Header/3a.png"
+            class="img-fluid d-block"
+            alt="Tech header image"
+          />
+          <div class="overlay-text">
+            <h1>Technologies we embrace</h1>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <div class="container mt-5">
-      <div class="row justify-content-center">
-        <h2 class="text-center mb-4">Technologies Used</h2>
-        <section class="tech-intro-section">
-        <p class="text-center mb-4">
-          At <strong>IMBA Dynamics</strong>, we believe that the fusion of innovative ideas with the right technologies is key to crafting solutions that not only meet but exceed our clients' expectations.
-        </p>
-        <p class="text-center mb-4">
-          Our expertise spans a diverse array of cutting-edge tools and libraries, allowing us to tackle complex challenges with precision and efficiency. By harnessing powerful programming languages, advanced data analysis tools, and state-of-the-art machine learning frameworks, we transform raw data into actionable insights and intelligent applications.
-        </p>
-        <p class="text-center mb-5">
-          Below are some of the key technologies that empower us to deliver exceptional results and drive success for businesses across various industries. You can see a quick overview by hovering over the icons and gain a more detailed insight by clicking 'Learn More'.
-        </p>
       </section>
-        <!-- Flip Card 1 -->
-        <div class="col-md-4">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img
-                  src="images/python-icon.svg"
-                  alt="Python Icon"
-                  width="80"
-                  height="80"
-                />
-                <span>Python</span>
+
+      <!-- Technologies Content Section -->
+      <section class="tech-content">
+        <div class="container mt-5">
+          <div class="row justify-content-center">
+            <h2 class="text-center mb-4">Technologies Used</h2>
+            <section class="tech-intro-section">
+              <p class="text-center mb-4">
+                At <strong>IMBA Dynamics</strong>, we believe that the fusion of
+                innovative ideas with the right technologies is key to crafting
+                solutions that not only meet but exceed our clients'
+                expectations.
+              </p>
+              <p class="text-center mb-4">
+                Our expertise spans a diverse array of cutting-edge tools and
+                libraries, allowing us to tackle complex challenges with
+                precision and efficiency. By harnessing powerful programming
+                languages, advanced data analysis tools, and state-of-the-art
+                machine learning frameworks, we transform raw data into
+                actionable insights and intelligent applications.
+              </p>
+              <p class="text-center mb-5">
+                Below are some of the key technologies that empower us to
+                deliver exceptional results and drive success for businesses
+                across various industries. You can see a quick overview by
+                hovering over the icons and gain a more detailed insight by
+                clicking 'Learn More'.
+              </p>
+            </section>
+            <!-- Flip Card 1 -->
+            <div class="col-md-4">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="images/python-icon.svg"
+                      alt="Python Icon"
+                      width="80"
+                      height="80"
+                    />
+                    <span>Python</span>
+                  </div>
+                  <div class="flip-card-back">
+                    <p>
+                      Python is a versatile language known for its simplicity
+                      and readability. It's widely used in web development, data
+                      analysis, machine learning, and automation, with a rich
+                      ecosystem of libraries that facilitate rapid development.
+                    </p>
+                    <button
+                      class="learn-more-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#pythonModal"
+                    >
+                      Learn More
+                    </button>
+                  </div>
+                </div>
               </div>
-              <div class="flip-card-back">
-                <p>
-                  Python is a versatile language known for its simplicity and
-                  readability. It's widely used in web development, data
-                  analysis, machine learning, and automation, with a rich
-                  ecosystem of libraries that facilitate rapid development.
-                </p>
+            </div>
+
+            <!-- Flip Card 2 -->
+            <div class="col-md-4">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="images/numpy-icon.svg"
+                      alt="NumPy Icon"
+                      width="80"
+                      height="80"
+                    />
+                    <span>NumPy</span>
+                  </div>
+                  <div class="flip-card-back">
+                    <p>
+                      NumPy is a powerful library for numerical computing in
+                      Python, providing support for large, multi-dimensional
+                      arrays and matrices, along with a collection of
+                      mathematical functions to operate on them.
+                    </p>
+                    <button
+                      class="learn-more-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#numpyModal"
+                    >
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Flip Card 3 -->
+            <div class="col-md-4">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="images/pandas-icon.svg"
+                      alt="Pandas Icon"
+                      width="80"
+                      height="80"
+                    />
+                    <span>Pandas</span>
+                  </div>
+                  <div class="flip-card-back">
+                    <p>
+                      Pandas is an essential library for data manipulation and
+                      analysis, offering data structures and operations for
+                      manipulating numerical tables and time series
+                    </p>
+                    <button
+                      class="learn-more-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#pandasModal"
+                    >
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Flip Card 4 -->
+            <div class="col-md-4">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="images/matplotlab-icon.svg"
+                      alt="Matplotlab Icon"
+                      width="80"
+                      height="80"
+                    />
+                    <span>Matplotlib and Seaborn</span>
+                  </div>
+                  <div class="flip-card-back">
+                    <p>
+                      Matplotlib and Seaborn are powerful libraries for data
+                      visualization in Python, enabling the creation of static,
+                      interactive, and animated visualizations with ease.
+                    </p>
+                    <button
+                      class="learn-more-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#MatplotModal"
+                    >
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Flip Card 5 -->
+            <div class="col-md-4">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="images\streamlit-icon.svg"
+                      alt="Streamlit Icon"
+                      width="80"
+                      height="80"
+                    />
+                    <span>Streamlit</span>
+                  </div>
+                  <div class="flip-card-back">
+                    <p>
+                      Streamlit is an open-source app framework for Machine
+                      Learning and Data Science projects, enabling the creation
+                      of beautiful, performant, and easily shareable web apps.
+                    </p>
+                    <button
+                      class="learn-more-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#StreamlitModal"
+                    >
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Flip Card 6 -->
+            <div class="col-md-4">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="images\XGBoost-icon.png"
+                      alt="Sci-kit Learn Icon"
+                      width="100"
+                      height="50"
+                    />
+                    <span>XGBoost</span>
+                  </div>
+                  <div class="flip-card-back">
+                    <p>
+                      XGBoost is an optimized distributed gradient boosting
+                      library designed to be highly efficient, flexible, and
+                      portable for machine learning tasks.
+                    </p>
+                    <button
+                      class="learn-more-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#XGBoostModal"
+                    >
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Flip Card 7 -->
+            <div class="col-md-4">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="images\tensorflow-icon.svg"
+                      alt="Tensorflow Icon"
+                      width="80"
+                      height="80"
+                    />
+                    <span>TensorFlow and Keras</span>
+                  </div>
+                  <div class="flip-card-back">
+                    <p>
+                      TensorFlow and Keras are powerful libraries for building
+                      and deploying machine learning models, particularly for
+                      deep learning applications.
+                    </p>
+                    <button
+                      class="learn-more-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#TensorflowModal"
+                    >
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Flip Card 8 -->
+            <div class="col-md-4">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="images\scikit-learn-icon.svg"
+                      alt="Sci-kit Learn Icon"
+                      width="100"
+                      height="100"
+                    />
+                    <span>Scikit-learn</span>
+                  </div>
+                  <div class="flip-card-back">
+                    <p>
+                      Scikit-learn is a widely used library for machine
+                      learning, providing simple and efficient tools for data
+                      mining and data analysis.
+                    </p>
+                    <button
+                      class="learn-more-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#ScikitModal"
+                    >
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Flip Card 9 -->
+            <div class="col-md-4">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="images\ploty-icon.svg"
+                      alt="Ploty Icon"
+                      width="80"
+                      height="80"
+                    />
+                    <span>Altair and Plotly</span>
+                  </div>
+                  <div class="flip-card-back">
+                    <p>
+                      Altair and Plotly are libraries for creating interactive
+                      data visualizations, allowing users to explore complex
+                      datasets through intuitive interfaces.
+                    </p>
+                    <button
+                      class="learn-more-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#AltairModal"
+                    >
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Addition skills section -->
+            <h2 class="text-center mb-4 skill-section-heading">
+              Additional Technologies and Skills
+            </h2>
+            <!-- Flip Card 10: JavaScript -->
+            <div class="col-md-4">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="images/javascript-icon.svg"
+                      alt="JavaScript Icon"
+                      width="80"
+                      height="80"
+                    />
+                    <span>JavaScript</span>
+                  </div>
+                  <div class="flip-card-back">
+                    <p>
+                      JavaScript is a versatile scripting language used to
+                      create dynamic and interactive content on websites,
+                      enhancing user experience with rich functionalities.
+                    </p>
+                    <button
+                      class="learn-more-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#JavaScriptModal"
+                    >
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Flip Card 11: HTML -->
+            <div class="col-md-4">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="images/html-icon.svg"
+                      alt="HTML Icon"
+                      width="80"
+                      height="80"
+                    />
+                    <span>HTML</span>
+                  </div>
+                  <div class="flip-card-back">
+                    <p>
+                      HTML (Hypertext Markup Language) is the standard language
+                      for creating web pages and structuring content on the web.
+                    </p>
+                    <button
+                      class="learn-more-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#HTMLModal"
+                    >
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Flip Card 12: CSS -->
+            <div class="col-md-4">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="images/css-icon.svg"
+                      alt="CSS Icon"
+                      width="80"
+                      height="80"
+                    />
+                    <span>CSS</span>
+                  </div>
+                  <div class="flip-card-back">
+                    <p>
+                      CSS (Cascading Style Sheets) is used to style and layout
+                      web pages, allowing developers to control the design,
+                      color, and positioning of elements.
+                    </p>
+                    <button
+                      class="learn-more-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#CSSModal"
+                    >
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Flip Card 13: Django -->
+            <div class="col-md-4">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="images/django-icon.svg"
+                      alt="Django Icon"
+                      width="80"
+                      height="80"
+                    />
+                    <span>Django</span>
+                  </div>
+                  <div class="flip-card-back">
+                    <p>
+                      Django is a high-level Python web framework that enables
+                      rapid development of secure and maintainable websites.
+                      Built by experienced developers, it takes care of much of
+                      the hassle of web development, so you build the app
+                      without needing to reinvent the wheel.
+                    </p>
+                    <button
+                      class="learn-more-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#DjangoModal"
+                    >
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Flip Card 14: jQuery -->
+            <div class="col-md-4">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="images/jquery-icon.svg"
+                      alt="jQuery Icon"
+                      width="80"
+                      height="80"
+                    />
+                    <span>jQuery</span>
+                  </div>
+                  <div class="flip-card-back">
+                    <p>
+                      jQuery simplifies HTML document traversing, event
+                      handling, animating, and Ajax interactions for rapid web
+                      development. It's designed to change the way that you
+                      write JavaScript.
+                    </p>
+                    <button
+                      class="learn-more-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#jQueryModal"
+                    >
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Flip Card 15: PostgreSQL -->
+            <div class="col-md-4">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="images/postgresql-icon.svg"
+                      alt="PostgreSQL Icon"
+                      width="80"
+                      height="80"
+                    />
+                    <span>PostgreSQL</span>
+                  </div>
+                  <div class="flip-card-back">
+                    <p>
+                      PostgreSQL is a highly scalable, SQL compliant database
+                      known for its robustness, flexibility, and performance. It
+                      supports both SQL (relational) and JSON (non-relational)
+                      querying.
+                    </p>
+                    <button
+                      class="learn-more-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#PostgreSQLModal"
+                    >
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modals Section -->
+      <section class="modals-section">
+        <!-- Python Modal -->
+        <div
+          class="modal fade"
+          id="pythonModal"
+          tabindex="-1"
+          aria-labelledby="pythonModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="pythonModalLabel">
+                  Learn More About Python
+                </h5>
                 <button
-                  class="learn-more-btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#pythonModal"
-                >
-                  Learn More
-                </button>
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Flip Card 2 -->
-        <div class="col-md-4">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
+              <div class="modal-body">
+                <p>
+                  Python is a high-level, general-purpose programming language,
+                  celebrated for its simplicity, readability, and versatility.
+                  Created by Guido van Rossum in 1991, Python has since become
+                  one of the most popular languages worldwide, known for its
+                  clean, intuitive syntax that makes it accessible to both
+                  beginners and experienced developers.
+                </p>
                 <img
-                  src="images/numpy-icon.svg"
-                  alt="NumPy Icon"
-                  width="80"
-                  height="80"
+                  src="images/python_pic.png"
+                  alt="Python illustration"
+                  class="img-fluid mt-3 image-margin-bottom"
                 />
-                <span>NumPy</span>
-              </div>
-              <div class="flip-card-back">
                 <p>
-                  NumPy is a powerful library for numerical computing in Python,
-                  providing support for large, multi-dimensional arrays and
-                  matrices, along with a collection of mathematical functions to
-                  operate on them.
+                  Python is used extensively across various fields, including
+                  web development, data science, machine learning, automation,
+                  and scientific computing. Frameworks like
+                  <strong>Django</strong> and <strong>Flask</strong> make it a
+                  powerful choice for web applications, while its extensive
+                  libraries—such as <strong>NumPy</strong>,
+                  <strong>Pandas</strong>, and
+                  <strong>TensorFlow</strong>—enable developers to perform data
+                  analysis and build machine learning models with ease.
                 </p>
+
+                <p>
+                  Python's dominance in data science and AI is supported by its
+                  ecosystem of libraries for numerical computing and data
+                  visualization, such as <strong>Matplotlib</strong> and
+                  <strong>Seaborn</strong>. These tools make Python the language
+                  of choice for creating data-driven applications and conducting
+                  complex data analysis.
+                </p>
+
+                <p>
+                  Beyond development and data science, Python is widely used in
+                  automation, scripting, and DevOps tasks, as well as in cloud
+                  computing platforms like AWS Lambda. Its versatility allows
+                  developers to build everything from simple scripts to
+                  enterprise-level applications efficiently.
+                </p>
+
+                <p>
+                  Backed by a large, active community, Python continues to grow,
+                  offering extensive support, libraries, and frameworks that
+                  enable developers to build scalable and robust solutions
+                  quickly and effectively.
+                </p>
+                <div class="text-center mt-3">
+                  <a
+                    href="https://www.python.org"
+                    class="btn btn-primary"
+                    target="_blank"
+                  >
+                    Visit Python Website
+                  </a>
+                </div>
+              </div>
+              <div class="modal-footer">
                 <button
-                  class="learn-more-btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#numpyModal"
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
                 >
-                  Learn More
+                  Close
                 </button>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Flip Card 3 -->
-        <div class="col-md-4">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
+        <!-- NumPy Modal -->
+        <div
+          class="modal fade"
+          id="numpyModal"
+          tabindex="-1"
+          aria-labelledby="numpyModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="numpyModalLabel">
+                  Learn More About NumPy
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  NumPy is a fundamental library for numerical computing in
+                  Python, widely used for its ability to handle large,
+                  multi-dimensional arrays and matrices with ease. At the core
+                  of NumPy is the powerful
+                  <strong>n-dimensional array</strong> object, which enables
+                  developers to perform complex mathematical operations
+                  efficiently on large datasets.
+                </p>
                 <img
-                  src="images/pandas-icon.svg"
-                  alt="Pandas Icon"
-                  width="80"
-                  height="80"
+                  src="images/numpy_pic.png"
+                  alt="NumPy illustration"
+                  class="img-fluid mt-3 image-margin-bottom"
                 />
-                <span>Pandas</span>
-              </div>
-              <div class="flip-card-back">
                 <p>
-                  Pandas is an essential library for data manipulation and
-                  analysis, offering data structures and operations for
-                  manipulating numerical tables and time series
+                  NumPy provides a vast collection of mathematical functions
+                  that allow for operations such as element-wise computations,
+                  linear algebra, statistical analysis, and Fourier transforms.
+                  These functions are optimized for performance, making NumPy
+                  highly efficient for processing large amounts of numerical
+                  data, even when working with millions of elements.
                 </p>
-                <button
-                  class="learn-more-btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#pandasModal"
-                >
-                  Learn More
-                </button>
+
+                <p>
+                  In addition to its performance capabilities, NumPy integrates
+                  seamlessly with other Python libraries like
+                  <strong>Pandas</strong>, <strong>Matplotlib</strong>, and
+                  <strong>SciPy</strong>, forming the backbone of data science
+                  and machine learning workflows. It supports advanced indexing,
+                  slicing, and broadcasting, which simplifies data manipulation
+                  and analysis.
+                </p>
+
+                <p>
+                  Whether you're conducting scientific research, developing
+                  machine learning models, or simply performing routine data
+                  analysis, NumPy offers the essential tools needed for
+                  high-performance numerical computing, making it an
+                  indispensable part of the Python ecosystem.
+                </p>
+                <div class="text-center mt-3">
+                  <a
+                    href="https://numpy.org"
+                    class="btn btn-primary"
+                    target="_blank"
+                  >
+                    Visit NumPy Website
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Flip Card 4 -->
-        <div class="col-md-4">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
+        <!-- Pandas Modal -->
+        <div
+          class="modal fade"
+          id="pandasModal"
+          tabindex="-1"
+          aria-labelledby="pandasModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="pandasModalLabel">
+                  Learn More About Pandas
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Pandas is an essential library in Python for data manipulation
+                  and analysis, offering powerful, flexible, and efficient tools
+                  for working with structured data. Its core data structures,
+                  such as
+                  <strong>DataFrames</strong> and <strong>Series</strong>, allow
+                  users to handle large datasets with ease, enabling operations
+                  like filtering, sorting, grouping, and aggregating data.
+                </p>
                 <img
-                  src="images/matplotlab-icon.svg"
-                  alt="Matplotlab Icon"
-                  width="80"
-                  height="80"
+                  src="images/pandas_pic.webp"
+                  alt="Pandas illustration"
+                  class="img-fluid mt-3 image-margin-bottom"
                 />
-                <span>Matplotlib and Seaborn</span>
-              </div>
-              <div class="flip-card-back">
                 <p>
-                  Matplotlib and Seaborn are powerful libraries for data
-                  visualization in Python, enabling the creation of static,
-                  interactive, and animated visualizations with ease.
+                  Pandas simplifies data handling by providing intuitive,
+                  high-level functions that make complex operations, such as
+                  merging datasets, reshaping data, or handling missing values,
+                  more accessible. Its ability to efficiently load and process
+                  large datasets from various file formats, including CSV,
+                  Excel, SQL, and JSON, makes it ideal for data wrangling in
+                  real-world applications.
                 </p>
+
+                <p>
+                  Designed with performance in mind, Pandas is optimized for
+                  fast execution of data analysis tasks, whether you're
+                  performing exploratory data analysis (EDA), time series
+                  analysis, or creating pivot tables. It integrates seamlessly
+                  with other libraries like
+                  <strong>NumPy</strong> and <strong>Matplotlib</strong>, making
+                  it a crucial part of Python's data science ecosystem.
+                </p>
+
+                <p>
+                  Whether you're working with financial data, large databases,
+                  or preparing data for machine learning models, Pandas provides
+                  the tools needed to manipulate and analyze datasets
+                  efficiently, with a clean and easy-to-understand syntax.
+                </p>
+                <div class="text-center mt-3">
+                  <a
+                    href="https://pandas.pydata.org"
+                    class="btn btn-primary"
+                    target="_blank"
+                  >
+                    Visit Pandas Website
+                  </a>
+                </div>
+              </div>
+              <div class="modal-footer">
                 <button
-                  class="learn-more-btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#MatplotModal"
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
                 >
-                  Learn More
+                  Close
                 </button>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Flip Card 5 -->
-        <div class="col-md-4">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
+        <!-- Matplotlib and Seaborn Modal -->
+        <div
+          class="modal fade"
+          id="MatplotModal"
+          tabindex="-1"
+          aria-labelledby="MatplotModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="MatplotModalLabel">
+                  Learn More About Matplotlib and Seaborn
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Matplotlib is a foundational library in Python for creating a
+                  wide range of data visualizations, including static, animated,
+                  and interactive plots. It offers extensive control over every
+                  aspect of a figure, allowing users to customize plots with
+                  precision. From simple line charts and bar graphs to complex
+                  multi-plot layouts and 3D visualizations, Matplotlib is the
+                  go-to tool for visualizing data in Python.
+                </p>
                 <img
-                  src="images\streamlit-icon.svg"
-                  alt="Streamlit Icon"
-                  width="80"
-                  height="80"
+                  src="images/matplotlib_pic.jpg"
+                  alt="Matplotlib illustration"
+                  class="img-fluid mt-3 image-margin-bottom"
                 />
-                <span>Streamlit</span>
-              </div>
-              <div class="flip-card-back">
                 <p>
-                  Streamlit is an open-source app framework for Machine Learning
-                  and Data Science projects, enabling the creation of beautiful,
-                  performant, and easily shareable web apps.
+                  Building on top of Matplotlib,
+                  <strong>Seaborn</strong> provides a high-level interface that
+                  simplifies the process of creating attractive and informative
+                  statistical graphics. With built-in support for common plot
+                  types such as histograms, heatmaps, and categorical plots,
+                  Seaborn is designed to work seamlessly with Pandas data
+                  structures, making it easier to visualize complex datasets
+                  with just a few lines of code.
                 </p>
+
+                <p>
+                  Together, Matplotlib and Seaborn offer a comprehensive toolkit
+                  for data visualization. While Matplotlib provides granular
+                  control over the appearance and layout of plots, Seaborn
+                  enhances this by focusing on making statistical visualizations
+                  more intuitive and aesthetically pleasing. Seaborn's themes
+                  and color palettes are designed to produce publication-quality
+                  visuals, ideal for exploratory data analysis (EDA) and
+                  reporting.
+                </p>
+
+                <p>
+                  Whether you're looking to create basic plots or intricate,
+                  multi-faceted visualizations, Matplotlib and Seaborn make the
+                  process simple, efficient, and powerful, enabling users to
+                  communicate insights from data effectively.
+                </p>
+                <div class="text-center mt-3">
+                  <a
+                    href="https://matplotlib.org"
+                    class="btn btn-primary"
+                    target="_blank"
+                  >
+                    Visit Matplotlib Website
+                  </a>
+                </div>
+              </div>
+              <div class="modal-footer">
                 <button
-                  class="learn-more-btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#StreamlitModal"
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
                 >
-                  Learn More
+                  Close
                 </button>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Flip Card 6 -->
-        <div class="col-md-4">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
+        <!-- Streamlit Modal -->
+        <div
+          class="modal fade"
+          id="StreamlitModal"
+          tabindex="-1"
+          aria-labelledby="StreamlitModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="StreamlitModalLabel">
+                  Learn More About Streamlit
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Streamlit is an open-source app framework specifically
+                  designed for building and deploying data-driven web
+                  applications with minimal effort. Its simplicity and ease of
+                  use allow developers, data scientists, and machine learning
+                  engineers to create fully functional, interactive web apps in
+                  just a few lines of Python code. By focusing on rapid
+                  development, Streamlit eliminates the need for complex
+                  front-end development, allowing users to focus on data and
+                  model insights.
+                </p>
                 <img
-                  src="images\XGBoost-icon.png"
-                  alt="Sci-kit Learn Icon"
-                  width="100"
-                  height="50"
+                  src="images/streamlit_pic.png"
+                  alt="Streamlit illustration"
+                  class="img-fluid mt-3 image-margin-bottom"
                 />
-                <span>XGBoost</span>
-              </div>
-              <div class="flip-card-back">
                 <p>
-                  XGBoost is an optimized distributed gradient boosting library
-                  designed to be highly efficient, flexible, and portable for
-                  machine learning tasks.
+                  Streamlit supports seamless integration with popular Python
+                  libraries like <strong>Pandas</strong>,
+                  <strong>Matplotlib</strong>, <strong>Seaborn</strong>,
+                  <strong>Scikit-learn</strong>, and
+                  <strong>TensorFlow</strong>, enabling users to easily build
+                  apps that visualize data, display machine learning model
+                  outputs, and provide interactive user interfaces for data
+                  exploration and manipulation. The ability to run apps locally
+                  or deploy them to the cloud makes it highly versatile for a
+                  range of applications.
                 </p>
+
+                <p>
+                  With Streamlit's powerful widgets, such as sliders, text
+                  inputs, and interactive plots, users can quickly add
+                  interactivity to their apps without writing extensive
+                  JavaScript or HTML code. This makes it particularly useful for
+                  showcasing machine learning models, dashboards, and data
+                  analysis results in real time.
+                </p>
+
+                <p>
+                  Whether you're prototyping a machine learning model, creating
+                  interactive dashboards, or building a proof-of-concept app for
+                  data science projects, Streamlit accelerates development by
+                  streamlining the process and making it easier to share
+                  insights via web apps, even for non-developers.
+                </p>
+                <div class="text-center mt-3">
+                  <a
+                    href="https://streamlit.io"
+                    class="btn btn-primary"
+                    target="_blank"
+                  >
+                    Visit Streamlit Website
+                  </a>
+                </div>
+              </div>
+              <div class="modal-footer">
                 <button
-                  class="learn-more-btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#XGBoostModal"
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
                 >
-                  Learn More
+                  Close
                 </button>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Flip Card 7 -->
-        <div class="col-md-4">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
+        <!-- XGBoost Modal -->
+        <div
+          class="modal fade"
+          id="XGBoostModal"
+          tabindex="-1"
+          aria-labelledby="XGBoostModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="XGBoostModalLabel">
+                  Learn More About XGBoost
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  XGBoost (eXtreme Gradient Boosting) is an optimized,
+                  distributed gradient boosting library designed to deliver
+                  high-performance machine learning algorithms with a focus on
+                  speed and scalability. Built to handle large datasets and
+                  complex data patterns, XGBoost is known for producing highly
+                  accurate models in a fraction of the time required by other
+                  algorithms, making it a popular choice for both data science
+                  competitions and real-world applications.
+                </p>
                 <img
-                  src="images\tensorflow-icon.svg"
-                  alt="Tensorflow Icon"
-                  width="80"
-                  height="80"
+                  src="images/xcboost_pic.png"
+                  alt="XCBoost illustration"
+                  class="img-fluid mt-3 image-margin-bottom"
                 />
-                <span>TensorFlow and Keras</span>
-              </div>
-              <div class="flip-card-back">
                 <p>
-                  TensorFlow and Keras are powerful libraries for building and
-                  deploying machine learning models, particularly for deep
-                  learning applications.
+                  XGBoost uses an ensemble of decision trees to improve
+                  predictive accuracy by combining the output of multiple weak
+                  models to create a strong learner. It supports both
+                  classification and regression tasks and excels at handling
+                  structured/tabular data, offering features like regularization
+                  to reduce overfitting, automatic handling of missing data, and
+                  parallelized computation for faster training times.
                 </p>
+
+                <p>
+                  Widely used in **Kaggle** competitions and industry use cases
+                  such as **predictive analytics**, **fraud detection**, and
+                  **financial modeling**, XGBoost has proven to be highly
+                  effective for solving problems where accuracy and performance
+                  are crucial. Its ability to automatically tune hyperparameters
+                  and efficiently work with large, high-dimensional datasets
+                  makes it a go-to tool for data scientists looking to build
+                  state-of-the-art machine learning models.
+                </p>
+
+                <p>
+                  With its robust API support in languages like Python, R, and
+                  Java, XGBoost integrates smoothly with existing data science
+                  workflows. Whether you're building models for business
+                  analytics, medical diagnoses, or marketing predictions,
+                  XGBoost offers a powerful solution for developing accurate and
+                  scalable machine learning systems.
+                </p>
+                <div class="text-center mt-3">
+                  <a
+                    href="https://xgboost.ai"
+                    class="btn btn-primary"
+                    target="_blank"
+                  >
+                    Visit XGBoost Website
+                  </a>
+                </div>
+              </div>
+              <div class="modal-footer">
                 <button
-                  class="learn-more-btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#TensorflowModal"
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
                 >
-                  Learn More
+                  Close
                 </button>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Flip Card 8 -->
-        <div class="col-md-4">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
+        <!-- TensorFlow and Keras Modal -->
+        <div
+          class="modal fade"
+          id="TensorflowModal"
+          tabindex="-1"
+          aria-labelledby="TensorflowModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="TensorflowModalLabel">
+                  Learn More About TensorFlow and Keras
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  TensorFlow is a powerful open-source library designed for
+                  building and deploying machine learning models, offering
+                  end-to-end support for both research and production
+                  environments. Developed by Google, TensorFlow is widely used
+                  for its flexibility, scalability, and ability to handle a
+                  variety of machine learning tasks, including deep learning,
+                  neural networks, and reinforcement learning. It supports
+                  multiple programming languages, with Python being the most
+                  popular.
+                </p>
                 <img
-                  src="images\scikit-learn-icon.svg"
-                  alt="Sci-kit Learn Icon"
-                  width="100"
-                  height="100"
+                  src="images/tensorflow_pic.png"
+                  alt="Tensorflow illustration"
+                  class="img-fluid mt-3 image-margin-bottom"
                 />
-                <span>Scikit-learn</span>
-              </div>
-              <div class="flip-card-back">
                 <p>
-                  Scikit-learn is a widely used library for machine learning,
-                  providing simple and efficient tools for data mining and data
-                  analysis.
+                  Keras, integrated as TensorFlow's high-level API, simplifies
+                  the development of machine learning models by providing an
+                  intuitive and user-friendly interface for quickly building and
+                  training neural networks. Keras abstracts many of the complex
+                  aspects of deep learning, enabling developers to design models
+                  using a few lines of code, making it accessible to both
+                  beginners and experts in the field.
                 </p>
+
+                <p>
+                  TensorFlow's architecture supports distributed computing,
+                  allowing it to efficiently run on multiple CPUs and GPUs, as
+                  well as specialized hardware like TPUs (Tensor Processing
+                  Units). This capability enables scalable training of large
+                  models across devices and platforms, making TensorFlow ideal
+                  for developing models that require high-performance computing,
+                  such as image recognition, natural language processing, and
+                  time series forecasting.
+                </p>
+
+                <p>
+                  Together, TensorFlow and Keras provide a comprehensive
+                  ecosystem for building, training, and deploying machine
+                  learning models. TensorFlow's ability to handle the entire
+                  machine learning pipeline—from data preprocessing and model
+                  building to deployment and scaling—combined with Keras' ease
+                  of use, makes this combination one of the most widely used
+                  frameworks in artificial intelligence, powering everything
+                  from research projects to large-scale production systems.
+                </p>
+                <div class="text-center mt-3">
+                  <a
+                    href="https://www.tensorflow.org"
+                    class="btn btn-primary"
+                    target="_blank"
+                  >
+                    Visit TensorFlow Website
+                  </a>
+                </div>
+              </div>
+              <div class="modal-footer">
                 <button
-                  class="learn-more-btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#ScikitModal"
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
                 >
-                  Learn More
+                  Close
                 </button>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Flip Card 9 -->
-        <div class="col-md-4">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
+        <!-- Scikit-learn Modal -->
+        <div
+          class="modal fade"
+          id="ScikitModal"
+          tabindex="-1"
+          aria-labelledby="ScikitModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="ScikitModalLabel">
+                  Learn More About Scikit-learn
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Scikit-learn is a robust and user-friendly machine learning
+                  library in Python that provides efficient tools for data
+                  mining, data analysis, and building predictive models. It
+                  offers a comprehensive suite of algorithms for both
+                  **supervised** and **unsupervised learning**, making it
+                  suitable for tasks such as classification, regression,
+                  clustering, and dimensionality reduction.
+                </p>
                 <img
-                  src="images\ploty-icon.svg"
-                  alt="Ploty Icon"
-                  width="80"
-                  height="80"
+                  src="images/scikit_pic.png"
+                  alt="Scikit-Learn illustration"
+                  class="img-fluid mt-3 image-margin-bottom"
                 />
-                <span>Altair and Plotly</span>
-              </div>
-              <div class="flip-card-back">
                 <p>
-                  Altair and Plotly are libraries for creating interactive data
-                  visualizations, allowing users to explore complex datasets
-                  through intuitive interfaces.
+                  With built-in support for popular machine learning models like
+                  **decision trees**, **random forests**, **support vector
+                  machines**, and **k-nearest neighbors**, Scikit-learn enables
+                  developers to easily build and evaluate machine learning
+                  models. It also includes tools for **model evaluation**,
+                  **cross-validation**, and **hyperparameter tuning**, allowing
+                  users to fine-tune their models for optimal performance.
                 </p>
+
+                <p>
+                  Scikit-learn integrates seamlessly with the broader Python
+                  data science ecosystem, working well with libraries like
+                  **NumPy** for numerical computations and **Pandas** for data
+                  manipulation. Its simple and consistent API design ensures
+                  that users can experiment with different models and techniques
+                  quickly and easily.
+                </p>
+
+                <p>
+                  Scikit-learn is widely used in both academia and industry for
+                  applications such as **predictive analytics**, **customer
+                  segmentation**, and **recommendation systems**. Its
+                  versatility, ease of use, and extensive documentation make it
+                  one of the most popular libraries for machine learning in
+                  Python.
+                </p>
+                <div class="text-center mt-3">
+                  <a
+                    href="https://scikit-learn.org"
+                    class="btn btn-primary"
+                    target="_blank"
+                  >
+                    Visit Scikit-learn Website
+                  </a>
+                </div>
+              </div>
+              <div class="modal-footer">
                 <button
-                  class="learn-more-btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#AltairModal"
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
                 >
-                  Learn More
+                  Close
                 </button>
               </div>
             </div>
           </div>
         </div>
-        
-        <!-- Addition skills section -->
-        <h2 class="text-center mb-4 skill-section-heading">Additional Technologies and Skills</h2>
-        <!-- Flip Card 10: JavaScript -->
-        <div class="col-md-4">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="images/javascript-icon.svg" alt="JavaScript Icon" width="80" height="80" />
-                <span>JavaScript</span>
+
+        <!-- Altair and Plotly Modal -->
+        <div
+          class="modal fade"
+          id="AltairModal"
+          tabindex="-1"
+          aria-labelledby="AltairModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="AltairModalLabel">
+                  Learn More About Altair and Plotly
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
               </div>
-              <div class="flip-card-back">
+              <div class="modal-body">
                 <p>
-                  JavaScript is a versatile scripting language used to create dynamic and interactive content on websites, enhancing user experience with rich functionalities.
+                  Altair is a declarative statistical visualization library in
+                  Python, designed for simplicity and elegance. It allows users
+                  to create stunning, **interactive** visualizations by defining
+                  **what** they want to visualize, and Altair handles **how** to
+                  display it. Altair is built on the **Vega-Lite** grammar,
+                  which enables concise and human-readable syntax to generate
+                  visualizations such as bar charts, scatter plots, line graphs,
+                  and more. Its declarative nature ensures that visualizations
+                  are easy to construct and modify, making it a favorite for
+                  **exploratory data analysis** (EDA) and rapid prototyping.
                 </p>
-                <button class="learn-more-btn" data-bs-toggle="modal" data-bs-target="#JavaScriptModal">
-                  Learn More
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Flip Card 11: HTML -->
-        <div class="col-md-4">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="images/html-icon.svg" alt="HTML Icon" width="80" height="80" />
-                <span>HTML</span>
-              </div>
-              <div class="flip-card-back">
+                <img
+                  src="images/altair_pic.jpg"
+                  alt="Altair illustration"
+                  class="img-fluid mt-3 image-margin-bottom"
+                />
                 <p>
-                  HTML (Hypertext Markup Language) is the standard language for creating web pages and structuring content on the web.
+                  Plotly, on the other hand, is a powerful library geared toward
+                  creating **complex, interactive web-based visualizations** and
+                  dashboards. With Plotly, users can build highly customizable
+                  charts such as 3D surface plots, heatmaps, and choropleth
+                  maps. Plotly is particularly suited for creating rich,
+                  interactive dashboards that allow users to zoom, pan, and
+                  hover over data points, making it ideal for real-time data
+                  analysis and **data reporting**.
                 </p>
-                <button class="learn-more-btn" data-bs-toggle="modal" data-bs-target="#HTMLModal">
-                  Learn More
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <!-- Flip Card 12: CSS -->
-        <div class="col-md-4">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="images/css-icon.svg" alt="CSS Icon" width="80" height="80" />
-                <span>CSS</span>
-              </div>
-              <div class="flip-card-back">
                 <p>
-                  CSS (Cascading Style Sheets) is used to style and layout web pages, allowing developers to control the design, color, and positioning of elements.
+                  Both libraries integrate seamlessly with **Pandas** and other
+                  Python data analysis tools, making it easy to visualize data
+                  directly from dataframes. While Altair focuses on making
+                  statistical visualizations easy to understand and simple to
+                  create, Plotly provides advanced interactivity and
+                  customization, making it a go-to library for building visually
+                  complex and highly interactive visualizations.
                 </p>
-                <button class="learn-more-btn" data-bs-toggle="modal" data-bs-target="#CSSModal">
-                  Learn More
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <!-- Flip Card 13: Django -->
-        <div class="col-md-4">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="images/django-icon.svg" alt="Django Icon" width="80" height="80" />
-                <span>Django</span>
-              </div>
-              <div class="flip-card-back">
                 <p>
-                  Django is a high-level Python web framework that enables rapid development of secure and maintainable websites. Built by experienced developers, it takes care of much of the hassle of web development, so you build the app without needing to reinvent the wheel.
+                  Whether you're conducting exploratory data analysis with
+                  Altair or building detailed, interactive dashboards with
+                  Plotly, these libraries empower data scientists and analysts
+                  to present insights effectively and share them through
+                  web-based platforms.
                 </p>
-                <button class="learn-more-btn" data-bs-toggle="modal" data-bs-target="#DjangoModal">
-                  Learn More
+                <div class="text-center mt-3">
+                  <a
+                    href="https://altair-viz.github.io"
+                    class="btn btn-primary"
+                    target="_blank"
+                  >
+                    Visit Altair Website
+                  </a>
+                  <a
+                    href="https://plotly.com"
+                    class="btn btn-primary mt-2"
+                    target="_blank"
+                  >
+                    Visit Plotly Website
+                  </a>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
                 </button>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Flip Card 14: jQuery -->
-        <div class="col-md-4">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="images/jquery-icon.svg" alt="jQuery Icon" width="80" height="80" />
-                <span>jQuery</span>
+        <!-- JavaScript Modal -->
+        <div
+          class="modal fade"
+          id="JavaScriptModal"
+          tabindex="-1"
+          aria-labelledby="JavaScriptModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="JavaScriptModalLabel">
+                  Learn More About JavaScript
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
               </div>
-              <div class="flip-card-back">
+              <div class="modal-body">
                 <p>
-                  jQuery simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development. It's designed to change the way that you write JavaScript.
+                  JavaScript is a versatile, high-level programming language
+                  that plays a crucial role in web development. It is a
+                  client-side scripting language that enables dynamic,
+                  interactive content on web pages. JavaScript allows developers
+                  to create features like form validation, real-time updates,
+                  and interactive elements such as sliders, image galleries, and
+                  navigation menus.
                 </p>
-                <button class="learn-more-btn" data-bs-toggle="modal" data-bs-target="#jQueryModal">
-                  Learn More
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Flip Card 15: PostgreSQL -->
-        <div class="col-md-4">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="images/postgresql-icon.svg" alt="PostgreSQL Icon" width="80" height="80" />
-                <span>PostgreSQL</span>
-              </div>
-              <div class="flip-card-back">
+                <img
+                  src="images/javascript_pic.png"
+                  alt="JavaScript"
+                  class="img-fluid mt-3 image-margin-bottom"
+                />
                 <p>
-                  PostgreSQL is a highly scalable, SQL compliant database known for its robustness, flexibility, and performance. It supports both SQL (relational) and JSON (non-relational) querying.
+                  Beyond basic interactivity, JavaScript can control multimedia,
+                  manipulate HTML and CSS to change the appearance of the page
+                  dynamically, and enable the development of complex front-end
+                  applications. Paired with modern libraries and frameworks like
+                  React, Vue, or Angular, JavaScript powers single-page
+                  applications (SPAs) that provide a fast, seamless user
+                  experience.
                 </p>
-                <button class="learn-more-btn" data-bs-toggle="modal" data-bs-target="#PostgreSQLModal">
-                  Learn More
+                <p>
+                  JavaScript is also used in server-side development with
+                  technologies like Node.js, allowing developers to use the same
+                  language on both the front and back ends of a web application.
+                  This flexibility has made JavaScript one of the most
+                  widely-used languages in software development, extending
+                  beyond the browser to mobile app development, game
+                  development, and even IoT (Internet of Things) applications.
+                </p>
+                <div class="text-center mt-3">
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                    class="btn btn-primary"
+                    target="_blank"
+                  >
+                    Visit JavaScript Website
+                  </a>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
                 </button>
               </div>
             </div>
           </div>
         </div>
 
-    <!-- Python Modal -->
-    <div
-      class="modal fade"
-      id="pythonModal"
-      tabindex="-1"
-      aria-labelledby="pythonModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="pythonModalLabel">
-              Learn More About Python
+        <!-- HTML Modal -->
+        <div
+          class="modal fade"
+          id="HTMLModal"
+          tabindex="-1"
+          aria-labelledby="HTMLModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="HTMLModalLabel">
+                  Learn More About HTML
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  HTML (Hypertext Markup Language) is the foundational language
+                  used to create and structure content on the web. It provides
+                  the backbone for all web pages by defining elements like
+                  headings, paragraphs, lists, links, and images. Web browsers
+                  interpret HTML files and render the visual structure you see
+                  when visiting websites.
+                </p>
+                <img
+                  src="images/html_pic.png"
+                  alt="HTML"
+                  class="img-fluid mt-3 image-margin-bottom"
+                />
+                <p>
+                  HTML uses a system of tags to format content. These tags, such
+                  as
+                  <code>&lt;h1&gt;</code> for headings and
+                  <code>&lt;p&gt;</code> for paragraphs, instruct the browser on
+                  how to display text, images, and links. HTML5, the latest
+                  version of the language, introduces new features like native
+                  support for multimedia elements (audio and video), along with
+                  enhanced semantics, APIs, and integrations with JavaScript for
+                  creating dynamic and interactive experiences.
+                </p>
+                <p>
+                  Together with CSS and JavaScript, HTML forms the core building
+                  blocks of any website or web application, enabling developers
+                  to design user-friendly, visually appealing, and responsive
+                  web pages.
+                </p>
+                <div class="text-center mt-3">
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                    class="btn btn-primary"
+                    target="_blank"
+                  >
+                    Visit HTML Website
+                  </a>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CSS Modal -->
+        <div
+          class="modal fade"
+          id="CSSModal"
+          tabindex="-1"
+          aria-labelledby="CSSModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="CSSModalLabel">
+                  Learn More About CSS
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  CSS (Cascading Style Sheets) is the styling language used to
+                  describe the visual presentation of HTML elements on web
+                  pages. It allows developers to control the look and feel of
+                  websites by defining elements such as colors, fonts, margins,
+                  padding, and layouts. CSS plays a vital role in responsive
+                  design, enabling web pages to adjust smoothly across different
+                  screen sizes and devices.
+                </p>
+                <img
+                  src="images/css_pic.png"
+                  alt="CSS"
+                  class="img-fluid mt-3 image-margin-bottom"
+                />
+                <p>
+                  One of the strengths of CSS is the separation of content and
+                  presentation. With CSS, developers can maintain clean HTML
+                  code focused on structure while applying external stylesheets
+                  to modify appearance. CSS also supports flexible box layouts,
+                  grids, animations, and transitions, which make modern web
+                  interfaces more interactive and visually appealing.
+                </p>
+                <p>
+                  Advanced CSS features like media queries allow for the
+                  creation of fully responsive web designs, adjusting layouts
+                  based on the user's screen resolution. CSS frameworks such as
+                  Bootstrap and Foundation simplify the development process by
+                  providing prebuilt styles and components.
+                </p>
+                <div class="text-center mt-3">
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                    class="btn btn-primary"
+                    target="_blank"
+                  >
+                    Visit CSS Website
+                  </a>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Django Modal -->
+        <div
+          class="modal fade"
+          id="DjangoModal"
+          tabindex="-1"
+          aria-labelledby="DjangoModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="DjangoModalLabel">
+                  Learn More About Django
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Django is a high-level Python web framework that simplifies
+                  the process of building robust, scalable, and secure web
+                  applications. It follows the "Don't Repeat Yourself" (DRY)
+                  principle, allowing developers to reuse code efficiently and
+                  focus on creating unique features. Django comes with a
+                  powerful Object Relational Mapper (ORM) that connects data
+                  models to databases without writing complex SQL queries.
+                </p>
+                <img
+                  src="images/django_pic.webp"
+                  alt="Django"
+                  class="img-fluid mt-3 image-margin-bottom"
+                />
+                <p>
+                  One of Django's strengths is its emphasis on security. It
+                  provides features like protection against common
+                  vulnerabilities such as cross-site scripting (XSS), cross-site
+                  request forgery (CSRF), and SQL injection. Additionally,
+                  Django's built-in authentication system and admin interface
+                  streamline the process of managing users and site content.
+                </p>
+                <p>
+                  Django's modularity and scalability make it a go-to choice for
+                  developers building anything from simple websites to complex
+                  applications like social media platforms or e-commerce stores.
+                  With its extensive ecosystem of plugins and reusable apps,
+                  Django reduces development time significantly.
+                </p>
+                <div class="text-center mt-3">
+                  <a
+                    href="https://www.djangoproject.com"
+                    class="btn btn-primary"
+                    target="_blank"
+                  >
+                    Visit Django Website
+                  </a>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- jQuery Modal -->
+        <div
+          class="modal fade"
+          id="jQueryModal"
+          tabindex="-1"
+          aria-labelledby="jQueryModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="jQueryModalLabel">
+                  Learn More About jQuery
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  jQuery is a popular JavaScript library that simplifies many of
+                  the tasks involved in front-end development, such as HTML
+                  document traversal, event handling, and animation. It provides
+                  an easy-to-use API that works across a variety of browsers,
+                  eliminating the need for developers to write lengthy
+                  JavaScript code to handle compatibility issues.
+                </p>
+                <img
+                  src="images/jquery_pic.jpg"
+                  alt="jQuery"
+                  class="img-fluid mt-3 image-margin-bottom"
+                />
+                <p>
+                  With jQuery, developers can manipulate DOM elements
+                  dynamically, bind events, and create powerful interactive
+                  features such as dropdowns, carousels, modal windows, and
+                  more. The library also includes built-in support for AJAX,
+                  making it easier to handle asynchronous data requests and
+                  updates without refreshing the page.
+                </p>
+                <p>
+                  While modern JavaScript frameworks like React and Vue are
+                  becoming more prevalent, jQuery is still widely used for
+                  adding simple interactivity to websites and is compatible with
+                  most legacy browsers, making it a dependable choice for many
+                  developers.
+                </p>
+                <div class="text-center mt-3">
+                  <a
+                    href="https://jquery.com"
+                    class="btn btn-primary"
+                    target="_blank"
+                  >
+                    Visit jQuery Website
+                  </a>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PostgreSQL Modal -->
+        <div
+          class="modal fade"
+          id="PostgreSQLModal"
+          tabindex="-1"
+          aria-labelledby="PostgreSQLModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="PostgreSQLModalLabel">
+                  Learn More About PostgreSQL
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  PostgreSQL is a powerful, open-source object-relational
+                  database management system (ORDBMS) known for its reliability,
+                  scalability, and extensibility. It supports both SQL for
+                  relational database queries and JSON for non-relational
+                  querying, making it suitable for modern applications with
+                  varied data types.
+                </p>
+                <img
+                  src="images/postgres_pic.jpeg"
+                  alt="PostgreSQL"
+                  class="img-fluid mt-3 image-margin-bottom"
+                />
+                <p>
+                  One of PostgreSQL's key strengths is its advanced data
+                  integrity features. It supports foreign keys, joins, views,
+                  and triggers, as well as multiversion concurrency control
+                  (MVCC), which allows multiple transactions to take place
+                  concurrently without conflicts. Its robust security features
+                  and flexible architecture make PostgreSQL suitable for
+                  handling large volumes of data in high-demand environments.
+                </p>
+                <p>
+                  PostgreSQL is highly extensible, offering developers the
+                  ability to define custom functions, data types, operators, and
+                  procedural languages. It also integrates with many programming
+                  languages, including Python, Java, and C++, allowing seamless
+                  interaction with backend services.
+                </p>
+                <div class="text-center mt-3">
+                  <a
+                    href="https://www.postgresql.org"
+                    class="btn btn-primary"
+                    target="_blank"
+                  >
+                    Visit PostgreSQL Website
+                  </a>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer text-white pt-5 pb-4">
+      <div class="container">
+        <div class="row text-center text-md-left">
+          <!-- Company Logo and Description -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold">
+              <img src="logo.png" alt="IMBA Dynamics Logo" height="40" />
             </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+            <p>
+              <strong>IMBA Dynamics</strong> specializes in predictive data
+              analytics and artificial intelligence solutions.
+            </p>
           </div>
-          <div class="modal-body">
+          <!-- Sitemap -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold">Site Map</h5>
             <p>
-              Python is a high-level, general-purpose programming language, celebrated for its simplicity, readability, and versatility. Created by Guido van Rossum in 1991, Python has since become one of the most popular languages worldwide, known for its clean, intuitive syntax that makes it accessible to both beginners and experienced developers.
+              <a href="index.html" class="footer-link">Home</a>
             </p>
-            <img
-              src="images/python_pic.png"
-              alt="Python illustration"
-              class="img-fluid mt-3 image-margin-bottom"
-            />
             <p>
-              Python is used extensively across various fields, including web development, data science, machine learning, automation, and scientific computing. Frameworks like <strong>Django</strong> and <strong>Flask</strong> make it a powerful choice for web applications, while its extensive libraries—such as <strong>NumPy</strong>, <strong>Pandas</strong>, and <strong>TensorFlow</strong>—enable developers to perform data analysis and build machine learning models with ease.
+              <a href="tech.html" class="footer-link">Technologies</a>
             </p>
-            
             <p>
-              Python's dominance in data science and AI is supported by its ecosystem of libraries for numerical computing and data visualization, such as <strong>Matplotlib</strong> and <strong>Seaborn</strong>. These tools make Python the language of choice for creating data-driven applications and conducting complex data analysis.
+              <a href="services.html" class="footer-link">Services</a>
             </p>
-            
             <p>
-              Beyond development and data science, Python is widely used in automation, scripting, and DevOps tasks, as well as in cloud computing platforms like AWS Lambda. Its versatility allows developers to build everything from simple scripts to enterprise-level applications efficiently.
+              <a href="contact.html" class="footer-link">Contact</a>
             </p>
-            
+          </div>
+          <!-- Useful Links -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold">Useful Links</h5>
             <p>
-              Backed by a large, active community, Python continues to grow, offering extensive support, libraries, and frameworks that enable developers to build scalable and robust solutions quickly and effectively.
-            </p>
-            <div class="text-center mt-3">
-              <a
-                href="https://www.python.org"
-                class="btn btn-primary"
-                target="_blank"
+              <a href="privacy-policy.html" class="footer-link"
+                >Privacy Policy</a
               >
-                Visit Python Website
-              </a>
+            </p>
+            <p>
+              <a href="terms-of-service.html" class="footer-link"
+                >Terms of Service</a
+              >
+            </p>
+            <p>
+              <a href="faq.html" class="footer-link">FAQ</a>
+            </p>
+            <p>
+              <a href="support.html" class="footer-link">Support</a>
+            </p>
+          </div>
+          <!-- Contact Details -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
+            <p><i class="fas fa-home mr-3"></i> Blackbox, Wilmslow</p>
+            <p>
+              <i class="fas fa-envelope mr-3"></i> contact@imba-dynamics.com
+            </p>
+            <p><i class="fas fa-phone mr-3"></i> +placeholder</p>
+          </div>
+        </div>
+        <!-- Social Media Icons -->
+        <div class="row align-items-center mt-4">
+          <div class="col-md-7 col-lg-8">
+            <p>© 2025 IMBA Dynamics. All rights reserved.</p>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    class="btn-floating btn-sm text-white"
+                    style="font-size: 23px"
+                  >
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    class="btn-floating btn-sm text-white"
+                    style="font-size: 23px"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    class="btn-floating btn-sm text-white"
+                    style="font-size: 23px"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    class="btn-floating btn-sm text-white"
+                    style="font-size: 23px"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-          </div>
         </div>
       </div>
-    </div>
+    </footer>
 
-    <!-- NumPy Modal -->
-    <div
-      class="modal fade"
-      id="numpyModal"
-      tabindex="-1"
-      aria-labelledby="numpyModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="numpyModalLabel">
-              Learn More About NumPy
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <p>
-          <div class="modal-body">
-            <p>
-              NumPy is a fundamental library for numerical computing in Python, widely used for its ability to handle large, multi-dimensional arrays and matrices with ease. At the core of NumPy is the powerful <strong>n-dimensional array</strong> object, which enables developers to perform complex mathematical operations efficiently on large datasets.
-            </p>
-            <img
-          src="images/numpy_pic.png"
-          alt="NumPy illustration"
-          class="img-fluid mt-3 image-margin-bottom"
-        />
-            <p>
-              NumPy provides a vast collection of mathematical functions that allow for operations such as element-wise computations, linear algebra, statistical analysis, and Fourier transforms. These functions are optimized for performance, making NumPy highly efficient for processing large amounts of numerical data, even when working with millions of elements.
-            </p>
-            
-            <p>
-              In addition to its performance capabilities, NumPy integrates seamlessly with other Python libraries like <strong>Pandas</strong>, <strong>Matplotlib</strong>, and <strong>SciPy</strong>, forming the backbone of data science and machine learning workflows. It supports advanced indexing, slicing, and broadcasting, which simplifies data manipulation and analysis.
-            </p>
-            
-            <p>
-              Whether you're conducting scientific research, developing machine learning models, or simply performing routine data analysis, NumPy offers the essential tools needed for high-performance numerical computing, making it an indispensable part of the Python ecosystem.
-            </p>
-            <div class="text-center mt-3">
-              <a
-                href="https://numpy.org"
-                class="btn btn-primary"
-                target="_blank"
-              >
-                Visit NumPy Website
-              </a>
-            </div>
-          </div>
-        </p>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Pandas Modal -->
-    <div
-      class="modal fade"
-      id="pandasModal"
-      tabindex="-1"
-      aria-labelledby="pandasModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="pandasModalLabel">
-              Learn More About Pandas
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <p>
-              Pandas is an essential library in Python for data manipulation and analysis, offering powerful, flexible, and efficient tools for working with structured data. Its core data structures, such as <strong>DataFrames</strong> and <strong>Series</strong>, allow users to handle large datasets with ease, enabling operations like filtering, sorting, grouping, and aggregating data.
-            </p>
-            <img
-            src="images/pandas_pic.webp"
-            alt="Pandas illustration"
-            class="img-fluid mt-3 image-margin-bottom"
-          />
-            <p>
-              Pandas simplifies data handling by providing intuitive, high-level functions that make complex operations, such as merging datasets, reshaping data, or handling missing values, more accessible. Its ability to efficiently load and process large datasets from various file formats, including CSV, Excel, SQL, and JSON, makes it ideal for data wrangling in real-world applications.
-            </p>
-            
-            <p>
-              Designed with performance in mind, Pandas is optimized for fast execution of data analysis tasks, whether you're performing exploratory data analysis (EDA), time series analysis, or creating pivot tables. It integrates seamlessly with other libraries like <strong>NumPy</strong> and <strong>Matplotlib</strong>, making it a crucial part of Python's data science ecosystem.
-            </p>
-            
-            <p>
-              Whether you’re working with financial data, large databases, or preparing data for machine learning models, Pandas provides the tools needed to manipulate and analyze datasets efficiently, with a clean and easy-to-understand syntax.
-            </p>
-            <div class="text-center mt-3">
-              <a
-                href="https://pandas.pydata.org"
-                class="btn btn-primary"
-                target="_blank"
-              >
-                Visit Pandas Website
-              </a>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Matplotlib and Seaborn Modal -->
-    <div
-      class="modal fade"
-      id="MatplotModal"
-      tabindex="-1"
-      aria-labelledby="MatplotModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="MatplotModalLabel">
-              Learn More About Matplotlib and Seaborn
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <p>
-              Matplotlib is a foundational library in Python for creating a wide range of data visualizations, including static, animated, and interactive plots. It offers extensive control over every aspect of a figure, allowing users to customize plots with precision. From simple line charts and bar graphs to complex multi-plot layouts and 3D visualizations, Matplotlib is the go-to tool for visualizing data in Python.
-            </p>
-            <img
-            src="images/matplotlib_pic.jpg"
-            alt="Matplotlib illustration"
-            class="img-fluid mt-3 image-margin-bottom"
-          />
-            <p>
-              Building on top of Matplotlib, <strong>Seaborn</strong> provides a high-level interface that simplifies the process of creating attractive and informative statistical graphics. With built-in support for common plot types such as histograms, heatmaps, and categorical plots, Seaborn is designed to work seamlessly with Pandas data structures, making it easier to visualize complex datasets with just a few lines of code.
-            </p>
-            
-            <p>
-              Together, Matplotlib and Seaborn offer a comprehensive toolkit for data visualization. While Matplotlib provides granular control over the appearance and layout of plots, Seaborn enhances this by focusing on making statistical visualizations more intuitive and aesthetically pleasing. Seaborn's themes and color palettes are designed to produce publication-quality visuals, ideal for exploratory data analysis (EDA) and reporting.
-            </p>
-            
-            <p>
-              Whether you're looking to create basic plots or intricate, multi-faceted visualizations, Matplotlib and Seaborn make the process simple, efficient, and powerful, enabling users to communicate insights from data effectively.
-            </p>
-            <div class="text-center mt-3">
-              <a
-                href="https://matplotlib.org"
-                class="btn btn-primary"
-                target="_blank"
-              >
-                Visit Matplotlib Website
-              </a>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Streamlit Modal -->
-    <div
-      class="modal fade"
-      id="StreamlitModal"
-      tabindex="-1"
-      aria-labelledby="StreamlitModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="StreamlitModalLabel">
-              Learn More About Streamlit
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <p>
-              Streamlit is an open-source app framework specifically designed for building and deploying data-driven web applications with minimal effort. Its simplicity and ease of use allow developers, data scientists, and machine learning engineers to create fully functional, interactive web apps in just a few lines of Python code. By focusing on rapid development, Streamlit eliminates the need for complex front-end development, allowing users to focus on data and model insights.
-            </p>
-            <img
-            src="images/streamlit_pic.png"
-            alt="Streamlit illustration"
-            class="img-fluid mt-3 image-margin-bottom"
-          />
-            <p>
-              Streamlit supports seamless integration with popular Python libraries like <strong>Pandas</strong>, <strong>Matplotlib</strong>, <strong>Seaborn</strong>, <strong>Scikit-learn</strong>, and <strong>TensorFlow</strong>, enabling users to easily build apps that visualize data, display machine learning model outputs, and provide interactive user interfaces for data exploration and manipulation. The ability to run apps locally or deploy them to the cloud makes it highly versatile for a range of applications.
-            </p>
-            
-            <p>
-              With Streamlit’s powerful widgets, such as sliders, text inputs, and interactive plots, users can quickly add interactivity to their apps without writing extensive JavaScript or HTML code. This makes it particularly useful for showcasing machine learning models, dashboards, and data analysis results in real time.
-            </p>
-            
-            <p>
-              Whether you're prototyping a machine learning model, creating interactive dashboards, or building a proof-of-concept app for data science projects, Streamlit accelerates development by streamlining the process and making it easier to share insights via web apps, even for non-developers.
-            </p>
-            <div class="text-center mt-3">
-              <a
-                href="https://streamlit.io"
-                class="btn btn-primary"
-                target="_blank"
-              >
-                Visit Streamlit Website
-              </a>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- XGBoost Modal -->
-    <div
-      class="modal fade"
-      id="XGBoostModal"
-      tabindex="-1"
-      aria-labelledby="XGBoostModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="XGBoostModalLabel">
-              Learn More About XGBoost
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <p>
-              XGBoost (eXtreme Gradient Boosting) is an optimized, distributed gradient boosting library designed to deliver high-performance machine learning algorithms with a focus on speed and scalability. Built to handle large datasets and complex data patterns, XGBoost is known for producing highly accurate models in a fraction of the time required by other algorithms, making it a popular choice for both data science competitions and real-world applications.
-            </p>
-            <img
-            src="images/xcboost_pic.png"
-            alt="XCBoost illustration"
-            class="img-fluid mt-3 image-margin-bottom"
-          />
-            <p>
-              XGBoost uses an ensemble of decision trees to improve predictive accuracy by combining the output of multiple weak models to create a strong learner. It supports both classification and regression tasks and excels at handling structured/tabular data, offering features like regularization to reduce overfitting, automatic handling of missing data, and parallelized computation for faster training times.
-            </p>
-            
-            <p>
-              Widely used in **Kaggle** competitions and industry use cases such as **predictive analytics**, **fraud detection**, and **financial modeling**, XGBoost has proven to be highly effective for solving problems where accuracy and performance are crucial. Its ability to automatically tune hyperparameters and efficiently work with large, high-dimensional datasets makes it a go-to tool for data scientists looking to build state-of-the-art machine learning models.
-            </p>
-            
-            <p>
-              With its robust API support in languages like Python, R, and Java, XGBoost integrates smoothly with existing data science workflows. Whether you're building models for business analytics, medical diagnoses, or marketing predictions, XGBoost offers a powerful solution for developing accurate and scalable machine learning systems.
-            </p>
-            <div class="text-center mt-3">
-              <a
-                href="https://xgboost.ai"
-                class="btn btn-primary"
-                target="_blank"
-              >
-                Visit XGBoost Website
-              </a>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- TensorFlow and Keras Modal -->
-    <div
-      class="modal fade"
-      id="TensorflowModal"
-      tabindex="-1"
-      aria-labelledby="TensorflowModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="TensorflowModalLabel">
-              Learn More About TensorFlow and Keras
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <p>
-              TensorFlow is a powerful open-source library designed for building and deploying machine learning models, offering end-to-end support for both research and production environments. Developed by Google, TensorFlow is widely used for its flexibility, scalability, and ability to handle a variety of machine learning tasks, including deep learning, neural networks, and reinforcement learning. It supports multiple programming languages, with Python being the most popular.
-            </p>
-            <img
-            src="images/tensorflow_pic.png"
-            alt="Tensorflow illustration"
-            class="img-fluid mt-3 image-margin-bottom"
-          />
-            <p>
-              Keras, integrated as TensorFlow's high-level API, simplifies the development of machine learning models by providing an intuitive and user-friendly interface for quickly building and training neural networks. Keras abstracts many of the complex aspects of deep learning, enabling developers to design models using a few lines of code, making it accessible to both beginners and experts in the field.
-            </p>
-            
-            <p>
-              TensorFlow's architecture supports distributed computing, allowing it to efficiently run on multiple CPUs and GPUs, as well as specialized hardware like TPUs (Tensor Processing Units). This capability enables scalable training of large models across devices and platforms, making TensorFlow ideal for developing models that require high-performance computing, such as image recognition, natural language processing, and time series forecasting.
-            </p>
-            
-            <p>
-              Together, TensorFlow and Keras provide a comprehensive ecosystem for building, training, and deploying machine learning models. TensorFlow’s ability to handle the entire machine learning pipeline—from data preprocessing and model building to deployment and scaling—combined with Keras’ ease of use, makes this combination one of the most widely used frameworks in artificial intelligence, powering everything from research projects to large-scale production systems.
-            </p>
-            <div class="text-center mt-3">
-              <a
-                href="https://www.tensorflow.org"
-                class="btn btn-primary"
-                target="_blank"
-              >
-                Visit TensorFlow Website
-              </a>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Scikit-learn Modal -->
-    <div
-      class="modal fade"
-      id="ScikitModal"
-      tabindex="-1"
-      aria-labelledby="ScikitModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="ScikitModalLabel">
-              Learn More About Scikit-learn
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <p>
-              Scikit-learn is a robust and user-friendly machine learning library in Python that provides efficient tools for data mining, data analysis, and building predictive models. It offers a comprehensive suite of algorithms for both **supervised** and **unsupervised learning**, making it suitable for tasks such as classification, regression, clustering, and dimensionality reduction.
-            </p>
-            <img
-            src="images/scikit_pic.png"
-            alt="Scikit-Learn illustration"
-            class="img-fluid mt-3 image-margin-bottom"
-          />
-            <p>
-              With built-in support for popular machine learning models like **decision trees**, **random forests**, **support vector machines**, and **k-nearest neighbors**, Scikit-learn enables developers to easily build and evaluate machine learning models. It also includes tools for **model evaluation**, **cross-validation**, and **hyperparameter tuning**, allowing users to fine-tune their models for optimal performance.
-            </p>
-            
-            <p>
-              Scikit-learn integrates seamlessly with the broader Python data science ecosystem, working well with libraries like **NumPy** for numerical computations and **Pandas** for data manipulation. Its simple and consistent API design ensures that users can experiment with different models and techniques quickly and easily.
-            </p>
-            
-            <p>
-              Scikit-learn is widely used in both academia and industry for applications such as **predictive analytics**, **customer segmentation**, and **recommendation systems**. Its versatility, ease of use, and extensive documentation make it one of the most popular libraries for machine learning in Python.
-            </p>
-            <div class="text-center mt-3">
-              <a
-                href="https://scikit-learn.org"
-                class="btn btn-primary"
-                target="_blank"
-              >
-                Visit Scikit-learn Website
-              </a>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Altair and Plotly Modal -->
-    <div
-      class="modal fade"
-      id="AltairModal"
-      tabindex="-1"
-      aria-labelledby="AltairModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="AltairModalLabel">
-              Learn More About Altair and Plotly
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <p>
-              Altair is a declarative statistical visualization library in Python, designed for simplicity and elegance. It allows users to create stunning, **interactive** visualizations by defining **what** they want to visualize, and Altair handles **how** to display it. Altair is built on the **Vega-Lite** grammar, which enables concise and human-readable syntax to generate visualizations such as bar charts, scatter plots, line graphs, and more. Its declarative nature ensures that visualizations are easy to construct and modify, making it a favorite for **exploratory data analysis** (EDA) and rapid prototyping.
-            </p>
-            <img
-            src="images/altair_pic.jpg"
-            alt="Altair illustration"
-            class="img-fluid mt-3 image-margin-bottom"
-          />
-            <p>
-              Plotly, on the other hand, is a powerful library geared toward creating **complex, interactive web-based visualizations** and dashboards. With Plotly, users can build highly customizable charts such as 3D surface plots, heatmaps, and choropleth maps. Plotly is particularly suited for creating rich, interactive dashboards that allow users to zoom, pan, and hover over data points, making it ideal for real-time data analysis and **data reporting**.
-            </p>
-            
-            <p>
-              Both libraries integrate seamlessly with **Pandas** and other Python data analysis tools, making it easy to visualize data directly from dataframes. While Altair focuses on making statistical visualizations easy to understand and simple to create, Plotly provides advanced interactivity and customization, making it a go-to library for building visually complex and highly interactive visualizations.
-            </p>
-            
-            <p>
-              Whether you're conducting exploratory data analysis with Altair or building detailed, interactive dashboards with Plotly, these libraries empower data scientists and analysts to present insights effectively and share them through web-based platforms.
-            </p>
-            <div class="text-center mt-3">
-              <a
-                href="https://altair-viz.github.io" 
-                class="btn btn-primary" 
-                target="_blank"
-              >
-                Visit Altair Website
-              </a>
-              <a
-                href="https://plotly.com"
-                class="btn btn-primary mt-2"
-                target="_blank"
-              >
-                Visit Plotly Website
-              </a>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- JavaScript Modal -->
-    <div class="modal fade" id="JavaScriptModal" tabindex="-1" aria-labelledby="JavaScriptModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="JavaScriptModalLabel">Learn More About JavaScript</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p>
-              JavaScript is a versatile, high-level programming language that plays a crucial role in web development. It is a client-side scripting language that enables dynamic, interactive content on web pages. JavaScript allows developers to create features like form validation, real-time updates, and interactive elements such as sliders, image galleries, and navigation menus.
-            </p>
-            <img src="images/javascript_pic.png" alt="JavaScript" class="img-fluid mt-3 image-margin-bottom"/>
-            <p>
-              Beyond basic interactivity, JavaScript can control multimedia, manipulate HTML and CSS to change the appearance of the page dynamically, and enable the development of complex front-end applications. Paired with modern libraries and frameworks like React, Vue, or Angular, JavaScript powers single-page applications (SPAs) that provide a fast, seamless user experience.
-            </p>
-            <p>
-              JavaScript is also used in server-side development with technologies like Node.js, allowing developers to use the same language on both the front and back ends of a web application. This flexibility has made JavaScript one of the most widely-used languages in software development, extending beyond the browser to mobile app development, game development, and even IoT (Internet of Things) applications.
-            </p>
-            <div class="text-center mt-3">
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                class="btn btn-primary"
-                target="_blank"
-              >
-                Visit JavaScript Website
-              </a>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- HTML Modal -->
-    <div class="modal fade" id="HTMLModal" tabindex="-1" aria-labelledby="HTMLModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="HTMLModalLabel">Learn More About HTML</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p>
-              HTML (Hypertext Markup Language) is the foundational language used to create and structure content on the web. It provides the backbone for all web pages by defining elements like headings, paragraphs, lists, links, and images. Web browsers interpret HTML files and render the visual structure you see when visiting websites.
-            </p>
-            <img src="images/html_pic.png" alt="HTML" class="img-fluid mt-3 image-margin-bottom" />
-            <p>
-              HTML uses a system of tags to format content. These tags, such as <code>&lt;h1&gt;</code> for headings and <code>&lt;p&gt;</code> for paragraphs, instruct the browser on how to display text, images, and links. HTML5, the latest version of the language, introduces new features like native support for multimedia elements (audio and video), along with enhanced semantics, APIs, and integrations with JavaScript for creating dynamic and interactive experiences.
-            </p>
-            <p>
-              Together with CSS and JavaScript, HTML forms the core building blocks of any website or web application, enabling developers to design user-friendly, visually appealing, and responsive web pages.
-            </p>
-            <div class="text-center mt-3">
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-                class="btn btn-primary"
-                target="_blank"
-              >
-                Visit HTML Website
-              </a>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-    <!-- CSS Modal -->
-    <div class="modal fade" id="CSSModal" tabindex="-1" aria-labelledby="CSSModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="CSSModalLabel">Learn More About CSS</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p>
-              CSS (Cascading Style Sheets) is the styling language used to describe the visual presentation of HTML elements on web pages. It allows developers to control the look and feel of websites by defining elements such as colors, fonts, margins, padding, and layouts. CSS plays a vital role in responsive design, enabling web pages to adjust smoothly across different screen sizes and devices.
-            </p>
-            <img src="images/css_pic.png" alt="CSS" class="img-fluid mt-3 image-margin-bottom" />
-            <p>
-              One of the strengths of CSS is the separation of content and presentation. With CSS, developers can maintain clean HTML code focused on structure while applying external stylesheets to modify appearance. CSS also supports flexible box layouts, grids, animations, and transitions, which make modern web interfaces more interactive and visually appealing.
-            </p>
-            <p>
-              Advanced CSS features like media queries allow for the creation of fully responsive web designs, adjusting layouts based on the user's screen resolution. CSS frameworks such as Bootstrap and Foundation simplify the development process by providing prebuilt styles and components.
-            </p>
-            <div class="text-center mt-3">
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-                class="btn btn-primary"
-                target="_blank"
-              >
-                Visit CSS Website
-              </a>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- Django Modal -->
-    <div class="modal fade" id="DjangoModal" tabindex="-1" aria-labelledby="DjangoModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="DjangoModalLabel">Learn More About Django</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p>
-              Django is a high-level Python web framework that simplifies the process of building robust, scalable, and secure web applications. It follows the "Don't Repeat Yourself" (DRY) principle, allowing developers to reuse code efficiently and focus on creating unique features. Django comes with a powerful Object Relational Mapper (ORM) that connects data models to databases without writing complex SQL queries.
-            </p>
-            <img src="images/django_pic.webp" alt="Django" class="img-fluid mt-3 image-margin-bottom" />
-            <p>
-              One of Django's strengths is its emphasis on security. It provides features like protection against common vulnerabilities such as cross-site scripting (XSS), cross-site request forgery (CSRF), and SQL injection. Additionally, Django's built-in authentication system and admin interface streamline the process of managing users and site content.
-            </p>
-            <p>
-              Django’s modularity and scalability make it a go-to choice for developers building anything from simple websites to complex applications like social media platforms or e-commerce stores. With its extensive ecosystem of plugins and reusable apps, Django reduces development time significantly.
-            </p>
-            <div class="text-center mt-3">
-              <a
-                href="https://www.djangoproject.com"
-                class="btn btn-primary"
-                target="_blank"
-              >
-                Visit Django Website
-              </a>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- jQuery Modal -->
-    <div class="modal fade" id="jQueryModal" tabindex="-1" aria-labelledby="jQueryModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="jQueryModalLabel">Learn More About jQuery</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p>
-              jQuery is a popular JavaScript library that simplifies many of the tasks involved in front-end development, such as HTML document traversal, event handling, and animation. It provides an easy-to-use API that works across a variety of browsers, eliminating the need for developers to write lengthy JavaScript code to handle compatibility issues.
-            </p>
-            <img src="images/jquery_pic.jpg" alt="jQuery" class="img-fluid mt-3 image-margin-bottom" />
-            <p>
-              With jQuery, developers can manipulate DOM elements dynamically, bind events, and create powerful interactive features such as dropdowns, carousels, modal windows, and more. The library also includes built-in support for AJAX, making it easier to handle asynchronous data requests and updates without refreshing the page.
-            </p>
-            <p>
-              While modern JavaScript frameworks like React and Vue are becoming more prevalent, jQuery is still widely used for adding simple interactivity to websites and is compatible with most legacy browsers, making it a dependable choice for many developers.
-            </p>
-            <div class="text-center mt-3">
-              <a
-                href="https://jquery.com"
-                class="btn btn-primary"
-                target="_blank"
-              >
-                Visit jQuery Website
-              </a>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- PostgreSQL Modal -->
-    <div class="modal fade" id="PostgreSQLModal" tabindex="-1" aria-labelledby="PostgreSQLModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="PostgreSQLModalLabel">Learn More About PostgreSQL</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p>
-              PostgreSQL is a powerful, open-source object-relational database management system (ORDBMS) known for its reliability, scalability, and extensibility. It supports both SQL for relational database queries and JSON for non-relational querying, making it suitable for modern applications with varied data types.
-            </p>
-            <img src="images/postgres_pic.jpeg" alt="PostgreSQL" class="img-fluid mt-3 image-margin-bottom" />
-            <p>
-              One of PostgreSQL's key strengths is its advanced data integrity features. It supports foreign keys, joins, views, and triggers, as well as multiversion concurrency control (MVCC), which allows multiple transactions to take place concurrently without conflicts. Its robust security features and flexible architecture make PostgreSQL suitable for handling large volumes of data in high-demand environments.
-            </p>
-            <p>
-              PostgreSQL is highly extensible, offering developers the ability to define custom functions, data types, operators, and procedural languages. It also integrates with many programming languages, including Python, Java, and C++, allowing seamless interaction with backend services.
-            </p>
-            <div class="text-center mt-3">
-              <a
-                href="https://www.postgresql.org"
-                class="btn btn-primary"
-                target="_blank"
-              >
-                Visit PostgreSQL Website
-              </a>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  <!-- Footer Section -->
-<footer class="footer text-white pt-5 pb-4">
-  <div class="container-fluid text-center text-md-left">
-    <div class="row text-center text-md-left">
-      <!-- Company Logo and Description -->
-      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-        <h5 class="text-uppercase mb-4 font-weight-bold">
-          <img src="logo.png" alt="IMBA Dynamics Logo" height="40" />
-        </h5>
-        <p>
-          <strong>IMBA Dynamics</strong> specializes in predictive data
-          analytics and artificial intelligence solutions.
-        </p>
-      </div>
-
-      <!-- Sitemap -->
-      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-        <h5 class="text-uppercase mb-4 font-weight-bold">Site Map</h5>
-        <p>
-          <a href="index.html" class="footer-link">Home</a>
-        </p>
-        <p>
-          <a href="tech.html" class="footer-link">Technologies</a>
-        </p>
-        <p>
-          <a href="services.html" class="footer-link">Services</a>
-        </p>
-        <p>
-          <a href="contact.html" class="footer-link">Contact</a>
-        </p>
-      </div>
-
-      <!-- Useful Links -->
-      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-        <h5 class="text-uppercase mb-4 font-weight-bold">Useful Links</h5>
-        <p>
-          <a href="#" class="footer-link">Privacy Policy</a>
-        </p>
-        <p>
-          <a href="#" class="footer-link">Terms of Service</a>
-        </p>
-        <p>
-          <a href="#" class="footer-link">FAQ</a>
-        </p>
-        <p>
-          <a href="#" class="footer-link">Support</a>
-        </p>
-      </div>
-
-      <!-- Contact Details -->
-      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-        <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
-        <p><i class="fas fa-home mr-3"></i> Blackbox, Wilmslow</p>
-        <p><i class="fas fa-envelope mr-3"></i> imba.dynamics@gmail.com</p>
-        <p><i class="fas fa-phone mr-3"></i> +44 7972 153 058</p>
-      </div>
-    </div>
-
-    <!-- Social Media Icons -->
-    <div class="row align-items-center mt-4">
-      <div class="col-md-7 col-lg-8">
-        <p>© 2024 IMBA Dynamics. All rights reserved.</p>
-      </div>
-      <div class="col-md-5 col-lg-4">
-        <div class="text-center text-md-right">
-          <ul class="list-unstyled list-inline">
-            <li class="list-inline-item">
-              <a
-                href="#"
-                class="btn-floating btn-sm text-white"
-                style="font-size: 23px"
-              >
-                <i class="fab fa-facebook"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a
-                href="#"
-                class="btn-floating btn-sm text-white"
-                style="font-size: 23px"
-              >
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a
-                href="#"
-                class="btn-floating btn-sm text-white"
-                style="font-size: 23px"
-              >
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a
-                href="#"
-                class="btn-floating btn-sm text-white"
-                style="font-size: 23px"
-              >
-                <i class="fab fa-linkedin"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
+    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
     <!-- Bootstrap JavaScript for version 5.3 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
