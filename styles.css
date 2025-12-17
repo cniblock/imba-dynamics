@@ -1030,9 +1030,10 @@ body {
   width: 300px;
   height: 300px;
   perspective: 1000px;
-  margin: 20px;
+  margin: 20px auto;
   cursor: pointer;
   box-sizing: border-box;
+  max-width: 100%;
 }
 
 .flip-card-inner {
@@ -1350,6 +1351,38 @@ body {
   box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
 }
 
+/* Mobile navbar menu */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #001f3f;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  .navbar-nav {
+    text-align: center;
+  }
+  
+  .navbar-nav .nav-item {
+    margin: 5px 0;
+  }
+  
+  .navbar .nav-link-animated {
+    padding: 10px 15px;
+    margin: 0;
+  }
+  
+  .navbar .nav-link-animated::after {
+    display: none;
+  }
+  
+  .navbar .nav-link-animated.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+  }
+}
+
 /* Responsive Logo Size */
 .navbar-brand img {
   height: 40px;
@@ -1366,6 +1399,338 @@ body {
 @media (max-width: 576px) {
   .navbar-brand img {
     height: 25px;
+  }
+}
+
+/* ===== COMPREHENSIVE MOBILE RESPONSIVE STYLES ===== */
+
+/* Tablet styles (768px and below) */
+@media (max-width: 768px) {
+  /* Flip cards - make them smaller and centered */
+  .flip-card {
+    width: 260px;
+    height: 260px;
+    margin: 15px auto;
+  }
+  
+  .flip-card-front {
+    font-size: 20px;
+    padding: 15px;
+  }
+  
+  .flip-card-back {
+    font-size: 14px;
+    padding: 15px;
+  }
+  
+  .flip-card-front i {
+    font-size: 40px;
+  }
+  
+  /* Service cards */
+  .service-card {
+    margin: 10px;
+  }
+  
+  /* Client cards */
+  .client-card {
+    padding: 20px;
+  }
+  
+  .client-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+  
+  .result-metric {
+    font-size: 2rem;
+  }
+  
+  /* Footer adjustments */
+  .footer {
+    text-align: center;
+  }
+  
+  .footer .row {
+    text-align: center;
+  }
+  
+  .footer .col-md-3,
+  .footer .col-md-2,
+  .footer .col-md-4 {
+    margin-bottom: 20px;
+  }
+  
+  /* Industries section cards */
+  .industries-section .card {
+    height: 200px;
+  }
+  
+  .industries-section .card-title {
+    font-size: 1rem;
+  }
+  
+  /* Contact form */
+  .contact-info-card {
+    margin-top: 30px;
+  }
+  
+  /* Consultation steps */
+  .consultation-img {
+    margin-top: 30px;
+  }
+}
+
+/* Mobile styles (576px and below) */
+@media (max-width: 576px) {
+  /* General spacing */
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  section {
+    padding: 40px 0;
+  }
+  
+  /* Flip cards - even smaller on mobile */
+  .flip-card {
+    width: 240px;
+    height: 240px;
+    margin: 10px auto;
+  }
+  
+  .flip-card-front {
+    font-size: 18px;
+    padding: 10px;
+  }
+  
+  .flip-card-back {
+    font-size: 13px;
+    padding: 10px;
+  }
+  
+  .flip-card-back p {
+    margin-bottom: 5px;
+  }
+  
+  .learn-more-btn {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+  
+  .flip-card-front i {
+    font-size: 35px;
+  }
+  
+  .flip-card-front img {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  
+  /* Hero section mobile */
+  .hero-background {
+    padding: 40px 0;
+  }
+  
+  .cta-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+  }
+  
+  .hero-note {
+    font-size: 0.8rem;
+  }
+  
+  /* Service cards mobile */
+  .service-card {
+    margin: 5px 0;
+    padding: 20px !important;
+  }
+  
+  .service-title {
+    font-size: 1.1rem;
+  }
+  
+  .service-text {
+    font-size: 0.9rem;
+  }
+  
+  /* Client cards mobile */
+  .client-card {
+    padding: 15px;
+  }
+  
+  .client-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+  
+  .client-card h4 {
+    font-size: 1.1rem;
+  }
+  
+  .result-metric {
+    font-size: 1.8rem;
+  }
+  
+  /* Why choose grid */
+  .why-choose-item {
+    padding: 15px 10px;
+  }
+  
+  .why-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+  
+  .why-choose-item h4 {
+    font-size: 1.1rem;
+  }
+  
+  /* Industries cards */
+  .industries-section .card {
+    height: 180px;
+  }
+  
+  .industries-section .card-title {
+    font-size: 0.9rem;
+  }
+  
+  /* Service overview items */
+  .service-item {
+    padding: 20px;
+  }
+  
+  .service-icon {
+    font-size: 2rem;
+  }
+  
+  .service-item h4 {
+    font-size: 1.1rem;
+  }
+  
+  /* Tech logos */
+  .tech-logos {
+    gap: 15px;
+  }
+  
+  .tech-logo {
+    height: 35px;
+  }
+  
+  /* Section headings */
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.3rem;
+  }
+  
+  /* Buttons */
+  .btn-view-all-services {
+    padding: 12px 25px;
+    font-size: 0.9rem;
+  }
+  
+  /* Contact page */
+  .contact-form-container {
+    padding: 0 10px;
+  }
+  
+  .contact-info-card {
+    padding: 20px;
+  }
+  
+  .step-number {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  
+  .step-content h4 {
+    font-size: 1.1rem;
+  }
+  
+  /* FAQ accordion */
+  .accordion-button {
+    font-size: 0.95rem;
+    padding: 12px 15px;
+  }
+  
+  .accordion-body {
+    font-size: 0.9rem;
+    padding: 15px;
+  }
+  
+  /* Footer mobile */
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  
+  .footer h5 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .footer p, .footer a {
+    font-size: 0.85rem;
+  }
+  
+  .footer .list-inline-item a {
+    font-size: 20px !important;
+  }
+  
+  /* Thank you page */
+  .thank-you-card {
+    padding: 25px 15px;
+  }
+  
+  .thank-you-icon {
+    font-size: 60px;
+  }
+  
+  .thank-you-title {
+    font-size: 1.8rem;
+  }
+}
+
+/* Extra small devices (400px and below) */
+@media (max-width: 400px) {
+  .flip-card {
+    width: 220px;
+    height: 220px;
+  }
+  
+  .hero-title {
+    font-size: 1.6rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .stat-label {
+    font-size: 0.8rem;
+  }
+  
+  .hero-stats {
+    gap: 20px;
+  }
+  
+  .overlay-text h1 {
+    font-size: 1.6rem;
   }
 }
 
