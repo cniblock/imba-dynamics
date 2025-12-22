@@ -196,5 +196,53 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-consent" id="cookieConsent">
+      <div class="cookie-consent-container">
+        <div class="cookie-consent-text">
+          <h4><i class="fas fa-cookie-bite"></i> Cookie Notice</h4>
+          <p>We use cookies to enhance your browsing experience and analyze site traffic. By clicking "Accept All", you consent to our use of cookies. Read our <a href="privacy-policy.html#cookies">Cookie Policy</a> for more information.</p>
+        </div>
+        <div class="cookie-consent-buttons">
+          <button class="cookie-btn cookie-btn-settings" onclick="openCookieSettings()">Cookie Settings</button>
+          <button class="cookie-btn cookie-btn-decline" onclick="declineCookies()">Decline</button>
+          <button class="cookie-btn cookie-btn-accept" onclick="acceptAllCookies()">Accept All</button>
+        </div>
+      </div>
+    </div>
+    <div class="cookie-settings-modal" id="cookieSettingsModal">
+      <div class="cookie-settings-content">
+        <div class="cookie-settings-header">
+          <h3><i class="fas fa-cog"></i> Cookie Preferences</h3>
+          <button class="cookie-settings-close" onclick="closeCookieSettings()">&times;</button>
+        </div>
+        <div class="cookie-category">
+          <div class="cookie-category-header"><h4>Strictly Necessary</h4><label class="cookie-toggle"><input type="checkbox" checked disabled><span class="cookie-toggle-slider"></span></label></div>
+          <p>These cookies are essential for the website to function properly. They cannot be disabled.</p>
+        </div>
+        <div class="cookie-category">
+          <div class="cookie-category-header"><h4>Analytics Cookies</h4><label class="cookie-toggle"><input type="checkbox" id="analyticsCookies"><span class="cookie-toggle-slider"></span></label></div>
+          <p>These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously.</p>
+        </div>
+        <div class="cookie-category">
+          <div class="cookie-category-header"><h4>Marketing Cookies</h4><label class="cookie-toggle"><input type="checkbox" id="marketingCookies"><span class="cookie-toggle-slider"></span></label></div>
+          <p>These cookies are used to deliver advertisements more relevant to you and your interests.</p>
+        </div>
+        <div class="cookie-settings-footer">
+          <button class="cookie-btn cookie-btn-decline" onclick="declineCookies()">Decline All</button>
+          <button class="cookie-btn cookie-btn-accept" onclick="savePreferences()">Save Preferences</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() { if (!localStorage.getItem('cookieConsent')) { setTimeout(function() { document.getElementById('cookieConsent').classList.add('show'); }, 1000); } });
+      function acceptAllCookies() { localStorage.setItem('cookieConsent', JSON.stringify({ necessary: true, analytics: true, marketing: true, timestamp: new Date().toISOString() })); document.getElementById('cookieConsent').classList.remove('show'); closeCookieSettings(); }
+      function declineCookies() { localStorage.setItem('cookieConsent', JSON.stringify({ necessary: true, analytics: false, marketing: false, timestamp: new Date().toISOString() })); document.getElementById('cookieConsent').classList.remove('show'); closeCookieSettings(); }
+      function openCookieSettings() { document.getElementById('cookieSettingsModal').classList.add('show'); const saved = localStorage.getItem('cookieConsent'); if (saved) { const prefs = JSON.parse(saved); document.getElementById('analyticsCookies').checked = prefs.analytics || false; document.getElementById('marketingCookies').checked = prefs.marketing || false; } }
+      function closeCookieSettings() { document.getElementById('cookieSettingsModal').classList.remove('show'); }
+      function savePreferences() { localStorage.setItem('cookieConsent', JSON.stringify({ necessary: true, analytics: document.getElementById('analyticsCookies').checked, marketing: document.getElementById('marketingCookies').checked, timestamp: new Date().toISOString() })); document.getElementById('cookieConsent').classList.remove('show'); closeCookieSettings(); }
+      document.getElementById('cookieSettingsModal').addEventListener('click', function(e) { if (e.target === this) closeCookieSettings(); });
+    </script>
   </body>
 </html> 
