@@ -158,9 +158,10 @@
                 <!-- FormSubmit configuration -->
                 <input type="hidden" name="_subject" value="New contact request from IMBA Dynamics website">
                 <input type="hidden" name="_template" value="table">
-                <input type="text" name="_honey" style="display:none">
-                <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_next" value="https://imba-dynamics.com/thank-you.html">
+                <!-- Honeypot field - hidden from users, bots will fill it and be rejected -->
+                <input type="text" name="_honey" style="display:none !important" tabindex="-1" autocomplete="off">
+                <!-- reCAPTCHA enabled (removed _captcha=false to enable FormSubmit's built-in CAPTCHA) -->
                 
                 <div class="mb-3">
                   <label for="name" class="form-label">Full Name</label>
