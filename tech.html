@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Discover the technologies powering IMBA Dynamics solutions: Python, TensorFlow, Scikit-learn, Pandas, NumPy, PostgreSQL, Streamlit, Django, and more cutting-edge tools." />
+    <link rel="icon" type="image/png" href="logo.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,7 +14,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <title>Technologies - IMBA Dynamics</title>
+    <title>Tech Stack - IMBA Dynamics</title>
   </head>
   <body>
     <!-- Navigation -->
@@ -44,7 +45,7 @@
                 class="nav-link nav-link-animated active"
                 aria-current="page"
                 href="tech.html"
-                >Technologies</a
+                >Tech Stack</a
               >
             </li>
             <li class="nav-item">
@@ -68,12 +69,12 @@
       <section id="tech-header" class="header-section">
         <div class="container-fluid p-0 position-relative">
           <img
-            src="AI Header/2b2.png"
+            src="AI Header/tech_stack_header_01.png"
             class="img-fluid d-block"
             alt="Tech header image"
           />
           <div class="overlay-text">
-            <h1>Technologies</h1>
+            <h1>Tech Stack</h1>
           </div>
         </div>
       </section>
@@ -82,7 +83,7 @@
       <section class="tech-content">
         <div class="container mt-5">
           <div class="row justify-content-center">
-            <h2 class="text-center mb-4 animate-on-scroll">Technologies Used</h2>
+            <h2 class="text-center mb-4 animate-on-scroll">Tech Stack by Business Problem</h2>
             <section class="tech-intro-section animate-on-scroll">
               <p class="text-center mb-4">
                 At <strong>IMBA Dynamics</strong>, we believe that the fusion of
@@ -106,6 +107,17 @@
                 clicking 'Learn More'.
               </p>
             </section>
+            <div class="tech-problem-filters animate-on-scroll">
+              <p class="text-center mb-3">Filter by business need:</p>
+              <div class="filter-button-group">
+                <button type="button" class="problem-filter-btn active" data-filter="all">All</button>
+                <button type="button" class="problem-filter-btn" data-filter="predictive">Predictive Analytics</button>
+                <button type="button" class="problem-filter-btn" data-filter="dashboards">Dashboards & Reporting</button>
+                <button type="button" class="problem-filter-btn" data-filter="automation">Automation & Integration</button>
+                <button type="button" class="problem-filter-btn" data-filter="fraud-risk">Fraud & Risk</button>
+                <button type="button" class="problem-filter-btn" data-filter="web-apps">Web Product Delivery</button>
+              </div>
+            </div>
             <!-- Flip Card 1 -->
             <div class="col-md-4 animate-on-scroll animate-delay-1">
               <div class="flip-card">
@@ -1845,6 +1857,14 @@
       </section>
     </div>
 
+    <section class="conversion-cta animate-on-scroll">
+      <div class="container text-center">
+        <h3>Need the right tech stack for your use case?</h3>
+        <p>We select tools based on your business outcomes, not hype, and implement them with maintainability in mind.</p>
+        <a href="contact.html" class="cta-button">Talk to an Expert</a>
+      </div>
+    </section>
+
     <!-- Footer Section -->
     <footer class="footer text-white pt-5 pb-4">
       <div class="container">
@@ -1866,7 +1886,7 @@
               <a href="index.html" class="footer-link">Home</a>
             </p>
             <p>
-              <a href="tech.html" class="footer-link">Technologies</a>
+              <a href="tech.html" class="footer-link">Tech Stack</a>
             </p>
             <p>
               <a href="services.html" class="footer-link">Services</a>
@@ -1900,7 +1920,6 @@
             <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
             <p><i class="fas fa-home mr-3"></i> Blackbox, Wilmslow</p>
             <p><i class="fas fa-envelope mr-3"></i> contact@imba-dynamics.com</p>
-            <p><i class="fas fa-phone mr-3"></i> placeholder</p>
           </div>
         </div>
         <!-- Social Media Icons -->
@@ -1913,7 +1932,7 @@
               <ul class="list-unstyled list-inline">
                 <li class="list-inline-item">
                   <a
-                    href="#"
+                    href="https://www.facebook.com/"
                     class="btn-floating btn-sm text-white"
                     style="font-size: 23px"
                   >
@@ -1922,7 +1941,7 @@
                 </li>
                 <li class="list-inline-item">
                   <a
-                    href="#"
+                    href="https://x.com/"
                     class="btn-floating btn-sm text-white"
                     style="font-size: 23px"
                   >
@@ -1931,7 +1950,7 @@
                 </li>
                 <li class="list-inline-item">
                   <a
-                    href="#"
+                    href="https://www.instagram.com/"
                     class="btn-floating btn-sm text-white"
                     style="font-size: 23px"
                   >
@@ -1940,7 +1959,7 @@
                 </li>
                 <li class="list-inline-item">
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/in/chris-niblock"
                     class="btn-floating btn-sm text-white"
                     style="font-size: 23px"
                   >
@@ -2035,6 +2054,59 @@
         });
         
         animatedElements.forEach(el => observer.observe(el));
+      });
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const filterButtons = document.querySelectorAll('.problem-filter-btn');
+        if (!filterButtons.length) return;
+
+        const techCategoryMap = {
+          'Python': ['predictive', 'automation', 'dashboards', 'data-foundation'],
+          'NumPy': ['predictive', 'data-foundation'],
+          'Pandas': ['dashboards', 'automation', 'data-foundation'],
+          'Matplotlib and Seaborn': ['dashboards'],
+          'Streamlit': ['dashboards', 'web-apps'],
+          'XGBoost': ['predictive', 'fraud-risk'],
+          'TensorFlow and Keras': ['predictive', 'fraud-risk'],
+          'Scikit-learn': ['predictive', 'fraud-risk'],
+          'Altair and Plotly': ['dashboards'],
+          'JavaScript': ['web-apps', 'dashboards'],
+          'HTML': ['web-apps'],
+          'CSS': ['web-apps'],
+          'Django': ['web-apps', 'automation'],
+          'jQuery': ['web-apps'],
+          'PostgreSQL': ['data-foundation', 'automation', 'dashboards']
+        };
+
+        const techCards = Array.from(document.querySelectorAll('.tech-content .flip-card'))
+          .map((card) => card.closest('.col-md-4'))
+          .filter(Boolean);
+
+        function getTechName(card) {
+          const label = card.querySelector('.flip-card-front span');
+          return label ? label.textContent.trim() : '';
+        }
+
+        function updateCards(filter) {
+          techCards.forEach((card) => {
+            const techName = getTechName(card);
+            const categories = techCategoryMap[techName] || ['data-foundation'];
+            const shouldShow = filter === 'all' || categories.includes(filter);
+            card.style.display = shouldShow ? '' : 'none';
+          });
+        }
+
+        filterButtons.forEach((button) => {
+          button.addEventListener('click', function() {
+            filterButtons.forEach((btn) => btn.classList.remove('active'));
+            this.classList.add('active');
+            updateCards(this.dataset.filter);
+          });
+        });
+
+        updateCards('all');
       });
     </script>
     
