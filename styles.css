@@ -850,13 +850,39 @@ body {
   font-weight: 600;
 }
 
-.tech-logos {
+.tech-logos-marquee {
+  overflow: hidden;
+  margin: 40px 0;
+  width: 100%;
+}
+
+.tech-logos-track {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  width: max-content;
+  animation: techLogosScroll 40s linear infinite;
+}
+
+.tech-logos-set {
+  display: flex;
   align-items: center;
   gap: 40px;
-  margin: 40px 0;
-  flex-wrap: wrap;
+  padding-right: 40px;
+}
+
+@keyframes techLogosScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tech-logos-track {
+    animation: none;
+  }
 }
 
 .tech-logo {
@@ -864,6 +890,7 @@ body {
   width: auto;
   opacity: 0.7;
   transition: opacity 0.3s ease;
+  flex-shrink: 0;
 }
 
 .tech-logo:hover {
@@ -917,6 +944,9 @@ body {
   background: #001f3f;
   color: #ffffff;
   border-color: #001f3f;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
 }
 
 /* ===== CONSULTATION PROCESS STYLES ===== */
@@ -1044,8 +1074,9 @@ body {
     font-size: 2.5rem;
   }
   
-  .tech-logos {
+  .tech-logos-set {
     gap: 20px;
+    padding-right: 20px;
   }
   
   .why-choose-grid {
@@ -2029,8 +2060,9 @@ body {
   }
   
   /* Tech logos */
-  .tech-logos {
+  .tech-logos-set {
     gap: 15px;
+    padding-right: 15px;
   }
   
   .tech-logo {

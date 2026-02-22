@@ -4,6 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="IMBA Dynamics Support" />
+    <link rel="canonical" href="https://imba-dynamics.com/support.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Support - IMBA Dynamics" />
+    <meta property="og:description" content="Get help from IMBA Dynamics support, submit a ticket, and access support resources." />
+    <meta property="og:url" content="https://imba-dynamics.com/support.html" />
+    <meta property="og:image" content="https://imba-dynamics.com/logo2.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Support - IMBA Dynamics" />
+    <meta name="twitter:description" content="Get help from IMBA Dynamics support, submit a ticket, and access support resources." />
+    <meta name="twitter:image" content="https://imba-dynamics.com/logo2.png" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "IMBA Dynamics",
+            "url": "https://imba-dynamics.com/",
+            "logo": "https://imba-dynamics.com/logo2.png",
+            "email": "contact@imba-dynamics.com",
+            "sameAs": ["https://www.linkedin.com/in/chris-niblock"]
+          },
+          {
+            "@type": "WebSite",
+            "name": "IMBA Dynamics",
+            "url": "https://imba-dynamics.com/"
+          }
+        ]
+      }
+    </script>
     <link rel="icon" type="image/x-icon" href="favicon/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
@@ -84,6 +114,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text-dark">
+            <h1 class="text-center mb-3">Support</h1>
             <h2 class="text-center mb-4">How Can We Help You?</h2>
 
             <!-- Quick Links -->
@@ -92,11 +123,11 @@
                 <div class="card h-100 text-center p-4">
                   <div class="card-body">
                     <i class="fas fa-book fa-3x mb-3 text-primary"></i>
-                    <h3 class="card-title">Documentation</h3>
+                    <h3 class="card-title">Ticket Guide</h3>
                     <p class="card-text">
-                      Access our comprehensive documentation and user guides.
+                      Learn what to include when submitting a support request.
                     </p>
-                    <a href="faq.html" class="btn btn-primary">View FAQ</a>
+                    <a href="#support-form" class="btn btn-primary">Open Ticket Form</a>
                   </div>
                 </div>
               </div>
@@ -179,7 +210,16 @@
             <!-- Support Form -->
             <div id="support-form" class="mb-5">
               <h3>Submit a Support Ticket</h3>
-              <form class="needs-validation" novalidate>
+              <form
+                class="needs-validation"
+                action="https://formsubmit.co/chris.niblock@imba-dynamics.com"
+                method="POST"
+                novalidate
+              >
+                <input type="hidden" name="_subject" value="New support ticket from IMBA Dynamics website" />
+                <input type="hidden" name="_template" value="table" />
+                <input type="hidden" name="_next" value="https://imba-dynamics.com/thank-you.html" />
+                <input type="text" name="_honey" style="display:none !important" tabindex="-1" autocomplete="off" />
                 <div class="row">
                   <div class="col-md-6 mb-3">
                     <label for="name" class="form-label">Name</label>
@@ -187,6 +227,7 @@
                       type="text"
                       class="form-control"
                       id="name"
+                      name="name"
                       required
                     />
                   </div>
@@ -196,6 +237,7 @@
                       type="email"
                       class="form-control"
                       id="email"
+                      name="email"
                       required
                     />
                   </div>
@@ -207,13 +249,14 @@
                     type="text"
                     class="form-control"
                     id="subject"
+                    name="subject"
                     required
                   />
                 </div>
 
                 <div class="mb-3">
                   <label for="category" class="form-label">Category</label>
-                  <select class="form-select" id="category" required>
+                  <select class="form-select" id="category" name="category" required>
                     <option value="">Select a category</option>
                     <option value="technical">Technical Issue</option>
                     <option value="billing">Billing Question</option>
@@ -225,7 +268,7 @@
 
                 <div class="mb-3">
                   <label for="priority" class="form-label">Priority</label>
-                  <select class="form-select" id="priority" required>
+                  <select class="form-select" id="priority" name="priority" required>
                     <option value="">Select priority level</option>
                     <option value="low">Low</option>
                     <option value="medium">Medium</option>
@@ -239,26 +282,18 @@
                   <textarea
                     class="form-control"
                     id="message"
+                    name="message"
                     rows="5"
                     required
                   ></textarea>
                 </div>
 
-                <div class="mb-3">
-                  <label for="attachment" class="form-label"
-                    >Attachments (optional)</label
-                  >
-                  <input
-                    type="file"
-                    class="form-control"
-                    id="attachment"
-                    multiple
-                  />
-                </div>
-
                 <button type="submit" class="btn btn-primary">
                   Submit Ticket
                 </button>
+                <p class="form-note mt-2">
+                  <small>Support tickets are routed directly to chris.niblock@imba-dynamics.com.</small>
+                </p>
               </form>
             </div>
 
@@ -354,38 +389,11 @@
         <!-- Social Media Icons -->
         <div class="row align-items-center mt-4">
           <div class="col-md-7 col-lg-8">
-            <p>© 2025 IMBA Dynamics. All rights reserved.</p>
+            <p>© 2026 IMBA Dynamics. All rights reserved.</p>
           </div>
           <div class="col-md-5 col-lg-4">
             <div class="text-center text-md-right">
               <ul class="list-unstyled list-inline">
-                <li class="list-inline-item">
-                  <a
-                    href="https://www.facebook.com/"
-                    class="btn-floating btn-sm text-white"
-                    style="font-size: 23px"
-                  >
-                    <i class="fab fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a
-                    href="https://x.com/"
-                    class="btn-floating btn-sm text-white"
-                    style="font-size: 23px"
-                  >
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a
-                    href="https://www.instagram.com/"
-                    class="btn-floating btn-sm text-white"
-                    style="font-size: 23px"
-                  >
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </li>
                 <li class="list-inline-item">
                   <a
                     href="https://www.linkedin.com/in/chris-niblock"
@@ -403,15 +411,34 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Bootstrap validation for support form before submit
+      (function () {
+        "use strict";
+        const forms = document.querySelectorAll(".needs-validation");
+        Array.from(forms).forEach((form) => {
+          form.addEventListener(
+            "submit",
+            (event) => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
     
     <!-- Cookie Consent Banner -->
     <div class="cookie-consent" id="cookieConsent">
       <div class="cookie-consent-container">
         <div class="cookie-consent-text">
           <h4><i class="fas fa-cookie-bite"></i> Cookie Notice</h4>
-          <p>We use cookies to enhance your browsing experience and analyze site traffic. By clicking "Accept All", you consent to our use of cookies. Read our <a href="privacy-policy.html#cookies">Cookie Policy</a> for more information.</p>
+          <p>We use essential cookies to remember your preferences and improve basic site functionality. You can manage optional cookie categories in settings. Read our <a href="privacy-policy.html#cookies">Cookie Policy</a> for more information.</p>
         </div>
         <div class="cookie-consent-buttons">
           <button class="cookie-btn cookie-btn-settings" onclick="openCookieSettings()">Cookie Settings</button>
