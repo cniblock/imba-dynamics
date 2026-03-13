@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="IMBA Dynamics Support" />
+    <meta name="description" content="Client support for active IMBA Dynamics engagements, including implementation follow-up, issue tracking, and delivery queries." />
     <link rel="canonical" href="https://imba-dynamics.com/support.html" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Support - IMBA Dynamics" />
-    <meta property="og:description" content="Get help from IMBA Dynamics support, submit a ticket, and access support resources." />
+    <meta property="og:description" content="Client support for active IMBA Dynamics engagements, including implementation follow-up, issue tracking, and delivery queries." />
     <meta property="og:url" content="https://imba-dynamics.com/support.html" />
-    <meta property="og:image" content="https://imba-dynamics.com/logo2.png" />
+    <meta property="og:image" content="https://imba-dynamics.com/images/IMBA-logo2.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Support - IMBA Dynamics" />
-    <meta name="twitter:description" content="Get help from IMBA Dynamics support, submit a ticket, and access support resources." />
-    <meta name="twitter:image" content="https://imba-dynamics.com/logo2.png" />
+    <meta name="twitter:description" content="Client support for active IMBA Dynamics engagements, including implementation follow-up, issue tracking, and delivery queries." />
+    <meta name="twitter:image" content="https://imba-dynamics.com/images/IMBA-logo2.jpg" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -22,7 +22,7 @@
             "@type": "Organization",
             "name": "IMBA Dynamics",
             "url": "https://imba-dynamics.com/",
-            "logo": "https://imba-dynamics.com/logo2.png",
+            "logo": "https://imba-dynamics.com/images/IMBA-logo2.jpg",
             "email": "contact@imba-dynamics.com",
             "sameAs": ["https://www.linkedin.com/in/chris-niblock"]
           },
@@ -115,7 +115,7 @@
         <div class="row">
           <div class="col-12 text-dark">
             <h1 class="text-center mb-3">Support</h1>
-            <h2 class="text-center mb-4">How Can We Help You?</h2>
+            <h2 class="text-center mb-4">Support for Active Engagements</h2>
 
             <!-- Quick Links -->
             <div class="row mb-5">
@@ -178,31 +178,30 @@
                   </li>
                   <li class="mb-3">
                     <i class="fas fa-comment me-2"></i>
-                    Contact Form: Use the support ticket form below
+                     Support Form: Use the support ticket form below
                   </li>
                   <li class="mb-3">
                     <i class="fas fa-comment me-2"></i>
-                    Live Chat: Available during business hours
+                     Response Window: We review support submissions during normal business hours
                   </li>
                 </ul>
               </div>
 
               <div class="col-md-6 mb-4">
-                <h3>Emergency Support</h3>
-                <p>For urgent issues outside of regular business hours:</p>
+                <h3>How We Use This Form</h3>
+                <p>Use this page if you are already working with IMBA Dynamics and need delivery follow-up.</p>
                 <ul class="list-unstyled">
                   <li class="mb-3">
                     <i class="fas fa-life-ring me-2"></i>
-                    Priority Support: urgent@imba-dynamics.com
+                    Best for implementation questions, defects, or agreed change requests
                   </li>
                   <li class="mb-3">
                     <i class="fas fa-envelope me-2"></i>
-                    Urgent Email: urgent@imba-dynamics.com
+                    New business enquiries should go through the main contact page
                   </li>
                 </ul>
                 <p class="alert alert-info">
-                  Please note: Emergency support is for critical system issues
-                  only.
+                  If you need a new consultation rather than project support, use the main contact form instead.
                 </p>
               </div>
             </div>
@@ -292,7 +291,7 @@
                   Submit Ticket
                 </button>
                 <p class="form-note mt-2">
-                  <small>Support tickets are routed directly to chris.niblock@imba-dynamics.com.</small>
+                  <small>Support requests are reviewed through the same delivery inbox used for client communications.</small>
                 </p>
               </form>
             </div>
@@ -389,7 +388,7 @@
         <!-- Social Media Icons -->
         <div class="row align-items-center mt-4">
           <div class="col-md-7 col-lg-8">
-            <p>© 2026 IMBA Dynamics. All rights reserved.</p>
+            <p>&copy; 2026 IMBA Dynamics. All rights reserved.</p>
           </div>
           <div class="col-md-5 col-lg-4">
             <div class="text-center text-md-right">
@@ -471,14 +470,8 @@
         </div>
       </div>
     </div>
-    <script>
-      document.addEventListener('DOMContentLoaded', function() { if (!localStorage.getItem('cookieConsent')) { setTimeout(function() { document.getElementById('cookieConsent').classList.add('show'); }, 1000); } });
-      function acceptAllCookies() { localStorage.setItem('cookieConsent', JSON.stringify({ necessary: true, analytics: true, marketing: true, timestamp: new Date().toISOString() })); document.getElementById('cookieConsent').classList.remove('show'); closeCookieSettings(); }
-      function declineCookies() { localStorage.setItem('cookieConsent', JSON.stringify({ necessary: true, analytics: false, marketing: false, timestamp: new Date().toISOString() })); document.getElementById('cookieConsent').classList.remove('show'); closeCookieSettings(); }
-      function openCookieSettings() { document.getElementById('cookieSettingsModal').classList.add('show'); const saved = localStorage.getItem('cookieConsent'); if (saved) { const prefs = JSON.parse(saved); document.getElementById('analyticsCookies').checked = prefs.analytics || false; document.getElementById('marketingCookies').checked = prefs.marketing || false; } }
-      function closeCookieSettings() { document.getElementById('cookieSettingsModal').classList.remove('show'); }
-      function savePreferences() { localStorage.setItem('cookieConsent', JSON.stringify({ necessary: true, analytics: document.getElementById('analyticsCookies').checked, marketing: document.getElementById('marketingCookies').checked, timestamp: new Date().toISOString() })); document.getElementById('cookieConsent').classList.remove('show'); closeCookieSettings(); }
-      document.getElementById('cookieSettingsModal').addEventListener('click', function(e) { if (e.target === this) closeCookieSettings(); });
-    </script>
+    <script src="site.js"></script>
   </body>
 </html>
+
+

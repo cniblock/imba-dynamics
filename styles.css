@@ -18,31 +18,36 @@ body {
 }
 
 /* ===== SCROLL ANIMATIONS ===== */
-/* Base state for animated elements - hidden before animation */
+/* Base state remains visible so content still renders without JavaScript. */
 .animate-on-scroll {
+  opacity: 1;
+  transform: none;
+}
+
+.animate-on-scroll.ready {
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-.animate-on-scroll.animate-fade-in {
+.animate-on-scroll.animate-fade-in.ready {
   transform: translateY(0);
 }
 
-.animate-on-scroll.animate-slide-left {
+.animate-on-scroll.animate-slide-left.ready {
   transform: translateX(-60px);
 }
 
-.animate-on-scroll.animate-slide-right {
+.animate-on-scroll.animate-slide-right.ready {
   transform: translateX(60px);
 }
 
-.animate-on-scroll.animate-scale {
+.animate-on-scroll.animate-scale.ready {
   transform: scale(0.9);
 }
 
 /* Animated state - when element is visible */
-.animate-on-scroll.is-visible {
+.animate-on-scroll.ready.is-visible {
   opacity: 1;
   transform: translateY(0) translateX(0) scale(1);
 }
@@ -153,7 +158,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   position: relative;
 }
 

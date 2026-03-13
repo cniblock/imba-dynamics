@@ -9,11 +9,11 @@
     <meta property="og:title" content="Thank You - IMBA Dynamics" />
     <meta property="og:description" content="Thank you for contacting IMBA Dynamics. We have received your message." />
     <meta property="og:url" content="https://imba-dynamics.com/thank-you.html" />
-    <meta property="og:image" content="https://imba-dynamics.com/logo2.png" />
+    <meta property="og:image" content="https://imba-dynamics.com/images/IMBA-logo2.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Thank You - IMBA Dynamics" />
     <meta name="twitter:description" content="Thank you for contacting IMBA Dynamics. We have received your message." />
-    <meta name="twitter:image" content="https://imba-dynamics.com/logo2.png" />
+    <meta name="twitter:image" content="https://imba-dynamics.com/images/IMBA-logo2.jpg" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -22,7 +22,7 @@
             "@type": "Organization",
             "name": "IMBA Dynamics",
             "url": "https://imba-dynamics.com/",
-            "logo": "https://imba-dynamics.com/logo2.png",
+            "logo": "https://imba-dynamics.com/images/IMBA-logo2.jpg",
             "email": "contact@imba-dynamics.com",
             "sameAs": ["https://www.linkedin.com/in/chris-niblock"]
           },
@@ -241,14 +241,6 @@
         </div>
       </div>
     </div>
-    <script>
-      document.addEventListener('DOMContentLoaded', function() { if (!localStorage.getItem('cookieConsent')) { setTimeout(function() { document.getElementById('cookieConsent').classList.add('show'); }, 1000); } });
-      function acceptAllCookies() { localStorage.setItem('cookieConsent', JSON.stringify({ necessary: true, analytics: true, marketing: true, timestamp: new Date().toISOString() })); document.getElementById('cookieConsent').classList.remove('show'); closeCookieSettings(); }
-      function declineCookies() { localStorage.setItem('cookieConsent', JSON.stringify({ necessary: true, analytics: false, marketing: false, timestamp: new Date().toISOString() })); document.getElementById('cookieConsent').classList.remove('show'); closeCookieSettings(); }
-      function openCookieSettings() { document.getElementById('cookieSettingsModal').classList.add('show'); const saved = localStorage.getItem('cookieConsent'); if (saved) { const prefs = JSON.parse(saved); document.getElementById('analyticsCookies').checked = prefs.analytics || false; document.getElementById('marketingCookies').checked = prefs.marketing || false; } }
-      function closeCookieSettings() { document.getElementById('cookieSettingsModal').classList.remove('show'); }
-      function savePreferences() { localStorage.setItem('cookieConsent', JSON.stringify({ necessary: true, analytics: document.getElementById('analyticsCookies').checked, marketing: document.getElementById('marketingCookies').checked, timestamp: new Date().toISOString() })); document.getElementById('cookieConsent').classList.remove('show'); closeCookieSettings(); }
-      document.getElementById('cookieSettingsModal').addEventListener('click', function(e) { if (e.target === this) closeCookieSettings(); });
-    </script>
+    <script src="site.js"></script>
   </body>
-</html> 
+</html>

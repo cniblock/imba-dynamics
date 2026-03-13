@@ -9,11 +9,11 @@
     <meta property="og:title" content="FAQ - IMBA Dynamics" />
     <meta property="og:description" content="Find answers to common questions about IMBA Dynamics specialisation, delivery approach, and technology solutions." />
     <meta property="og:url" content="https://imba-dynamics.com/faq.html" />
-    <meta property="og:image" content="https://imba-dynamics.com/logo2.png" />
+    <meta property="og:image" content="https://imba-dynamics.com/images/IMBA-logo2.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="FAQ - IMBA Dynamics" />
     <meta name="twitter:description" content="Find answers to common questions about IMBA Dynamics specialisation, delivery approach, and technology solutions." />
-    <meta name="twitter:image" content="https://imba-dynamics.com/logo2.png" />
+    <meta name="twitter:image" content="https://imba-dynamics.com/images/IMBA-logo2.jpg" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -22,7 +22,7 @@
             "@type": "Organization",
             "name": "IMBA Dynamics",
             "url": "https://imba-dynamics.com/",
-            "logo": "https://imba-dynamics.com/logo2.png",
+            "logo": "https://imba-dynamics.com/images/IMBA-logo2.jpg",
             "email": "contact@imba-dynamics.com",
             "sameAs": ["https://www.linkedin.com/in/chris-niblock"]
           },
@@ -284,12 +284,12 @@
                     data-bs-parent="#faqAccordion"
                   >
                     <div class="accordion-body">
-                      While we have a strong track record in legal, healthcare,
-                      automotive, retail, and sports, our solutions are
-                      versatile and can be customized to suit any industry. Our
-                      approach focuses on understanding each client's unique
-                      business challenges and objectives, allowing us to deliver
-                      targeted, high-value solutions.
+                      We focus on insurance operations, fraud investigation
+                      teams, and adjacent risk or case-management functions
+                      where operational visibility and structured intelligence
+                      have a direct commercial impact. If your environment has
+                      similar reporting, triage, or investigation demands, we
+                      can usually assess fit quickly.
                     </div>
                   </div>
                 </div>
@@ -344,13 +344,11 @@
                     data-bs-parent="#faqAccordion"
                   >
                     <div class="accordion-body">
-                      You can reach our technical support team via our Support
-                      page or by emailing support@imba-dynamics.com. We aim to
-                      respond to all inquiries within 24 hours and provide
-                      various Service Level Agreements (SLAs) depending on your
-                      specific requirements. Our goal is to ensure any technical
-                      issues are resolved quickly so you can stay focused on
-                      your core business.
+                      Existing clients can use the support page or their agreed
+                      delivery contact to raise implementation issues, change
+                      requests, or follow-up questions. If you are not yet a
+                      client, the contact page is the right route for new
+                      enquiries and project scoping.
                     </div>
                   </div>
                 </div>
@@ -487,14 +485,6 @@
         </div>
       </div>
     </div>
-    <script>
-      document.addEventListener('DOMContentLoaded', function() { if (!localStorage.getItem('cookieConsent')) { setTimeout(function() { document.getElementById('cookieConsent').classList.add('show'); }, 1000); } });
-      function acceptAllCookies() { localStorage.setItem('cookieConsent', JSON.stringify({ necessary: true, analytics: true, marketing: true, timestamp: new Date().toISOString() })); document.getElementById('cookieConsent').classList.remove('show'); closeCookieSettings(); }
-      function declineCookies() { localStorage.setItem('cookieConsent', JSON.stringify({ necessary: true, analytics: false, marketing: false, timestamp: new Date().toISOString() })); document.getElementById('cookieConsent').classList.remove('show'); closeCookieSettings(); }
-      function openCookieSettings() { document.getElementById('cookieSettingsModal').classList.add('show'); const saved = localStorage.getItem('cookieConsent'); if (saved) { const prefs = JSON.parse(saved); document.getElementById('analyticsCookies').checked = prefs.analytics || false; document.getElementById('marketingCookies').checked = prefs.marketing || false; } }
-      function closeCookieSettings() { document.getElementById('cookieSettingsModal').classList.remove('show'); }
-      function savePreferences() { localStorage.setItem('cookieConsent', JSON.stringify({ necessary: true, analytics: document.getElementById('analyticsCookies').checked, marketing: document.getElementById('marketingCookies').checked, timestamp: new Date().toISOString() })); document.getElementById('cookieConsent').classList.remove('show'); closeCookieSettings(); }
-      document.getElementById('cookieSettingsModal').addEventListener('click', function(e) { if (e.target === this) closeCookieSettings(); });
-    </script>
+    <script src="site.js"></script>
   </body>
 </html>

@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="IMBA Dynamics delivers bespoke data analytics and AI solutions for UK SME businesses. Specializing in vehicle insurance, fraud detection, predictive analytics, and custom MI dashboards." />
+    <meta name="description" content="IMBA Dynamics delivers operational intelligence, MI environments, and fraud-focused data systems for UK insurance and investigation teams." />
     <link rel="canonical" href="https://imba-dynamics.com/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="IMBA Dynamics" />
-    <meta property="og:description" content="IMBA Dynamics delivers bespoke data analytics and AI solutions for UK SME businesses." />
+    <meta property="og:description" content="IMBA Dynamics delivers operational intelligence, MI environments, and fraud-focused data systems for UK insurance and investigation teams." />
     <meta property="og:url" content="https://imba-dynamics.com/" />
-    <meta property="og:image" content="https://imba-dynamics.com/logo2.png" />
+    <meta property="og:image" content="https://imba-dynamics.com/images/IMBA-logo2.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="IMBA Dynamics" />
-    <meta name="twitter:description" content="IMBA Dynamics delivers bespoke data analytics and AI solutions for UK SME businesses." />
-    <meta name="twitter:image" content="https://imba-dynamics.com/logo2.png" />
+    <meta name="twitter:description" content="IMBA Dynamics delivers operational intelligence, MI environments, and fraud-focused data systems for UK insurance and investigation teams." />
+    <meta name="twitter:image" content="https://imba-dynamics.com/images/IMBA-logo2.jpg" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -22,7 +22,7 @@
             "@type": "Organization",
             "name": "IMBA Dynamics",
             "url": "https://imba-dynamics.com/",
-            "logo": "https://imba-dynamics.com/logo2.png",
+            "logo": "https://imba-dynamics.com/images/IMBA-logo2.jpg",
             "email": "contact@imba-dynamics.com",
             "sameAs": ["https://www.linkedin.com/in/chris-niblock"]
           },
@@ -595,102 +595,7 @@
       </div>
     </div>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Scroll Animation Script -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const animatedElements = document.querySelectorAll('.animate-on-scroll');
-        
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('is-visible');
-            }
-          });
-        }, {
-          threshold: 0.1,
-          rootMargin: '0px 0px -50px 0px'
-        });
-        
-        animatedElements.forEach(el => observer.observe(el));
-      });
-    </script>
-    
-    <!-- Cookie Consent Script -->
-    <script>
-      // Check if user has already made a cookie choice
-      document.addEventListener('DOMContentLoaded', function() {
-        const cookieConsent = localStorage.getItem('cookieConsent');
-        if (!cookieConsent) {
-          setTimeout(function() {
-            document.getElementById('cookieConsent').classList.add('show');
-          }, 1000);
-        }
-      });
-      
-      function acceptAllCookies() {
-        const preferences = {
-          necessary: true,
-          analytics: true,
-          marketing: true,
-          timestamp: new Date().toISOString()
-        };
-        localStorage.setItem('cookieConsent', JSON.stringify(preferences));
-        document.getElementById('cookieConsent').classList.remove('show');
-        closeCookieSettings();
-        // Here you would initialize analytics, etc.
-        console.log('All cookies accepted');
-      }
-      
-      function declineCookies() {
-        const preferences = {
-          necessary: true,
-          analytics: false,
-          marketing: false,
-          timestamp: new Date().toISOString()
-        };
-        localStorage.setItem('cookieConsent', JSON.stringify(preferences));
-        document.getElementById('cookieConsent').classList.remove('show');
-        closeCookieSettings();
-        console.log('Optional cookies declined');
-      }
-      
-      function openCookieSettings() {
-        document.getElementById('cookieSettingsModal').classList.add('show');
-        // Load saved preferences if they exist
-        const saved = localStorage.getItem('cookieConsent');
-        if (saved) {
-          const prefs = JSON.parse(saved);
-          document.getElementById('analyticsCookies').checked = prefs.analytics || false;
-          document.getElementById('marketingCookies').checked = prefs.marketing || false;
-        }
-      }
-      
-      function closeCookieSettings() {
-        document.getElementById('cookieSettingsModal').classList.remove('show');
-      }
-      
-      function savePreferences() {
-        const preferences = {
-          necessary: true,
-          analytics: document.getElementById('analyticsCookies').checked,
-          marketing: document.getElementById('marketingCookies').checked,
-          timestamp: new Date().toISOString()
-        };
-        localStorage.setItem('cookieConsent', JSON.stringify(preferences));
-        document.getElementById('cookieConsent').classList.remove('show');
-        closeCookieSettings();
-        console.log('Cookie preferences saved:', preferences);
-      }
-      
-      // Close modal when clicking outside
-      document.getElementById('cookieSettingsModal').addEventListener('click', function(e) {
-        if (e.target === this) {
-          closeCookieSettings();
-        }
-      });
-    </script>
+    <script src="site.js"></script>
   </body>
 </html>
