@@ -338,17 +338,18 @@ body.page-inner {
 }
 
 .client-card {
-  background: rgba(255, 255, 255, 0.09);
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: linear-gradient(165deg, #4a545c 0%, #3a4249 50%, #2f363c 100%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: var(--radius-sm);
-  box-shadow: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
   padding: 2rem 1.75rem;
+  color: #fff;
 }
 
 .client-card:hover {
   transform: none;
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.24);
+  background: linear-gradient(165deg, #545f68 0%, #434c54 50%, #383f47 100%);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .client-icon {
@@ -357,6 +358,7 @@ body.page-inner {
   height: auto;
   border-radius: 0;
   font-size: 1.75rem;
+  color: #fff;
 }
 
 .client-card h4 {
@@ -365,7 +367,11 @@ body.page-inner {
 }
 
 .client-description {
-  color: var(--color-muted-on-dark);
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.client-card .client-result {
+  border-top-color: rgba(255, 255, 255, 0.25);
 }
 
 .client-card-link {
@@ -380,14 +386,14 @@ body.page-inner {
   opacity: 0.75;
 }
 
-.result-metric {
+.trusted-by-section .client-card .result-metric {
   color: #fff;
   font-weight: 500;
   font-size: 2.25rem;
 }
 
-.result-label {
-  color: var(--color-muted-on-dark);
+.trusted-by-section .client-card .result-label {
+  color: rgba(255, 255, 255, 0.75);
   font-size: 0.75rem;
   text-transform: uppercase;
 }
@@ -424,18 +430,18 @@ body.page-inner {
 
 /* ===== ABOUT IMBA ===== */
 .about-imba-block {
-  background: rgba(255, 255, 255, 0.09);
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: linear-gradient(165deg, #4a545c 0%, #3a4249 50%, #2f363c 100%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: var(--radius-sm);
-  box-shadow: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
   padding: 2rem 1.75rem;
   height: 100%;
 }
 
 .about-imba-block:hover {
-  box-shadow: none;
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.24);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+  background: linear-gradient(165deg, #545f68 0%, #434c54 50%, #383f47 100%);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .about-imba-block h3 {
@@ -446,7 +452,7 @@ body.page-inner {
 }
 
 .about-imba-block p {
-  color: var(--color-muted-on-dark);
+  color: rgba(255, 255, 255, 0.82);
   line-height: 1.65;
   margin-bottom: 1rem;
 }
@@ -713,7 +719,6 @@ body.page-inner {
 
 /* ===== SITE-WIDE CONSISTENCY OVERRIDES ===== */
 /* Neutralise legacy yellow/gold accents from styles.css */
-.trusted-by-section .result-metric,
 .stats-bar .stat-number,
 .hero-content-bottom .stat-number {
   color: #fff !important;
