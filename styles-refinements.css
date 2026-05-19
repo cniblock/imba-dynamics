@@ -325,6 +325,20 @@ body.page-inner {
   letter-spacing: 0.06em;
 }
 
+.stats-bar .stat-number--phrase {
+  display: block;
+  font-size: clamp(1rem, 2.2vw, 1.35rem);
+  letter-spacing: 0.04em;
+  line-height: 1.25;
+  max-width: 11rem;
+  margin: 0 auto;
+}
+
+.stats-bar .stat-item {
+  text-align: center;
+  min-width: 7rem;
+}
+
 /* ===== TRUSTED BY (dark) ===== */
 .trusted-by-section {
   background: var(--color-black);
