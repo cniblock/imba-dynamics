@@ -171,85 +171,65 @@
     window.addEventListener("scroll", updateNavbar, { passive: true });
   }
 
-  function initTechStackAccordion() {
-    const columns = document.querySelectorAll(".tech-card-column");
-    const accordionRoot = document.getElementById("techStackAccordion");
+  function initTechStackFilters() {
+    const filterButtons = document.querySelectorAll(".problem-filter-btn");
+    const accordionItems = document.querySelectorAll(
+      "#techStackAccordion .accordion-item"
+    );
 
-    if (!columns.length || !accordionRoot) {
+    if (!filterButtons.length || !accordionItems.length) {
       return;
     }
 
-    columns.forEach(function (column, index) {
-      const flipCard = column.querySelector(".flip-card");
-      if (!flipCard) {
-        return;
-      }
+    function updateItems(filter) {
+      accordionItems.forEach(function (item) {
+        const categories = item.getAttribute("data-tech-categories") || "";
+        const shouldShow =
+          filter === "all" || categories.split(/\s+/).includes(filter);
+        item.style.display = shouldShow ? "" : "none";
+      });
+    }
 
-      const title =
-        flipCard.querySelector(".flip-card-front span")?.textContent?.trim() ||
-        "Technology";
-      const description =
-        flipCard.querySelector(".flip-card-back p")?.textContent?.trim() || "";
-      const icon = flipCard.querySelector(".flip-card-front img");
-      const learnMore = flipCard.querySelector(".learn-more-btn");
-      const headingId = "techHeading" + index;
-      const collapseId = "techCollapse" + index;
-      const isFirst = index === 0;
-
-      const item = document.createElement("div");
-      item.className = "accordion-item";
-
-      const header = document.createElement("h2");
-      header.className = "accordion-header";
-      header.id = headingId;
-
-      const button = document.createElement("button");
-      button.className = "accordion-button" + (isFirst ? "" : " collapsed");
-      button.type = "button";
-      button.setAttribute("data-bs-toggle", "collapse");
-      button.setAttribute("data-bs-target", "#" + collapseId);
-      button.setAttribute("aria-expanded", isFirst ? "true" : "false");
-      button.setAttribute("aria-controls", collapseId);
-
-      if (icon) {
-        const iconClone = icon.cloneNode(true);
-        iconClone.classList.add("tech-accordion-icon");
-        iconClone.removeAttribute("width");
-        iconClone.removeAttribute("height");
-        button.appendChild(iconClone);
-      }
-
-      button.appendChild(document.createTextNode(title));
-      header.appendChild(button);
-
-      const collapseWrap = document.createElement("div");
-      collapseWrap.id = collapseId;
-      collapseWrap.className =
-        "accordion-collapse collapse" + (isFirst ? " show" : "");
-      collapseWrap.setAttribute("aria-labelledby", headingId);
-      collapseWrap.setAttribute("data-bs-parent", "#techStackAccordion");
-
-      const body = document.createElement("div");
-      body.className = "accordion-body";
-      body.textContent = description;
-
-      if (learnMore) {
-        const learnClone = learnMore.cloneNode(true);
-        body.appendChild(document.createElement("br"));
-        body.appendChild(learnClone);
-      }
-
-      collapseWrap.appendChild(body);
-      item.appendChild(header);
-      item.appendChild(collapseWrap);
-      accordionRoot.appendChild(item);
+    filterButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        filterButtons.forEach(function (btn) {
+          btn.classList.remove("active");
+        });
+        button.classList.add("active");
+        updateItems(button.dataset.filter || "all");
+      });
     });
+
+    updateItems("all");
+  }
+
+  function initStickyCta() {
+    const sticky = document.getElementById("stickyCta");
+    if (!sticky || !document.body.classList.contains("page-home")) {
+      return;
+    }
+
+    const showAfter = 480;
+
+    const update = function () {
+      if (window.scrollY > showAfter) {
+        sticky.classList.add("is-visible");
+        document.body.classList.add("has-sticky-cta");
+      } else {
+        sticky.classList.remove("is-visible");
+        document.body.classList.remove("has-sticky-cta");
+      }
+    };
+
+    update();
+    window.addEventListener("scroll", update, { passive: true });
   }
 
   document.addEventListener("DOMContentLoaded", function () {
     initScrollAnimations();
     initCookieConsent();
     initNavbarScroll();
-    initTechStackAccordion();
+    initTechStackFilters();
+    initStickyCta();
   });
 })();
