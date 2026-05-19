@@ -337,6 +337,18 @@ body.page-inner {
 .stats-bar .stat-item {
   text-align: center;
   min-width: 7rem;
+  animation: none;
+  opacity: 1;
+}
+
+.stats-bar .stat-item.animate-on-scroll.ready {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.stats-bar .stat-item.animate-on-scroll.ready.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* ===== TRUSTED BY (dark) ===== */
