@@ -166,6 +166,40 @@ body.page-inner {
   min-width: 200px;
 }
 
+.hero-specialisation-link {
+  margin-top: 0.85rem;
+  margin-bottom: 0;
+  font-size: 0.85rem;
+}
+
+.hero-specialisation-link a {
+  color: rgba(255, 255, 255, 0.88);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.hero-specialisation-link a:hover {
+  color: #fff;
+}
+
+.demo-showcase {
+  padding: var(--section-pad-y) 0;
+}
+
+.demo-eyebrow {
+  margin-bottom: 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-muted-on-dark, #6c757d);
+}
+
+.conversion-cta .hero-cta-row,
+.proof-section .hero-cta-row {
+  margin-top: 1.5rem;
+}
+
 .page-hero-cinematic {
   position: relative;
   width: 100%;
